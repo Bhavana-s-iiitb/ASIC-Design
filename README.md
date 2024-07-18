@@ -5,7 +5,7 @@ This project contains the details of labs conducted in the ASIC design class.
 leafpad is the editor which can be installed using the command<br> "sudo snap install leafpad".<br>
 
 A c program file named "sum1ton" is created<br>
-![A1](https://github.com/user-attachments/assets/7fa519cf-8f92-44b0-a433-049a67c2e15f)
+<img src ="https://github.com/user-attachments/assets/7fa519cf-8f92-44b0-a433-049a67c2e15f" width="300" height="300">
 
 ### Step 2: Write the c program to count the numbers from 1 to n
 ![A3](https://github.com/user-attachments/assets/382a07e9-5736-46f4-b28f-6b8c6f5f9aae)
