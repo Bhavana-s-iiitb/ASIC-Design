@@ -2,11 +2,13 @@
 ## Command to run the program using RISCV compiler:<br>
 ``riscv64-unknown-elf-gcc -ofast -mabi-rv64i -o sum1ton.o sum1ton.c``<br>
 `spike pk sum1ton.o`<br>
-This gives the sum of numbers from 1 to n.<br>
->![VSDL3 1](https://github.com/user-attachments/assets/8f30ce99-3b21-44dc-af75-e1afcc1a73f5)
+This gives the sum of numbers from 1 to n.
+<br><br>
+![VSDL3 1](https://github.com/user-attachments/assets/8f30ce99-3b21-44dc-af75-e1afcc1a73f5)
 <br>
-## Command to debug the program<br>
-`spike -d pk sum1ton.o`
+## Command to debug the program
+<br>
+``spike -d pk sum1ton.o``
 <br>
 A debbuger is opened.<br>
 <br>
