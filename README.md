@@ -2,17 +2,19 @@
 This project contains the details of labs conducted in the ASIC design class.
 ## Lab 1: Executing a simple c program on virtual machine using gcc
 ### Step 1:Creating a .c file using leafpad editor 
-leafpad is the editor which can be installed using the command<br> "sudo snap install leafpad".<br>
+leafpad is the editor which can be installed using the command<br> 
+``"sudo snap install leafpad"``<br>
 
 A c program file named "sum1ton" is created<br>
+`leafpad sum1ton.c`<br>
 <img src ="https://github.com/user-attachments/assets/7fa519cf-8f92-44b0-a433-049a67c2e15f" width="300" height="300">
 
 ### Step 2: Write the c program to count the numbers from 1 to n
 ![A3](https://github.com/user-attachments/assets/382a07e9-5736-46f4-b28f-6b8c6f5f9aae)
 
 ### Step 3: Compile and run the c program using gcc
-"gcc sum1ton.c"<br>
-"./a.out"<br>
+``"gcc sum1ton.c"<br>``
+``"./a.out"``<br>
 The sum of numbers from 1 to 20 is displayed as shown<br>
 ![A5](https://github.com/user-attachments/assets/b6c230f3-de57-4586-ad71-ec8df1f71fc7)
 
