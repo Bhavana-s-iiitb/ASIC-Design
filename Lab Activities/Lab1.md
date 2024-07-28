@@ -22,7 +22,7 @@ Output gives the machine level instructions of the program:<br>
 ![A8](https://github.com/user-attachments/assets/3b0fc518-3644-43a4-b81d-5a8804e3de15)
 
 #### -o1 optimization
-![A9](https://github.com/user-attachments/assets/126de2b8-05e5-4d38-a8c5-76609764fb0b)
+<img src = "https://github.com/user-attachments/assets/126de2b8-05e5-4d38-a8c5-76609764fb0b" width="400" height="400">
 <br>
 #### Using -ofast instead of -o1 
 ![A10](https://github.com/user-attachments/assets/5317125d-f3c6-40c3-81e1-fd7e4070fe04)
@@ -57,5 +57,23 @@ Object dump command can be used to display the assembly instructions and corresp
 `reg 0 <register_name>`<br><br>
 For example, the value of register a0 before the execution was 0x0000000000000001 and content in a0 after excetion of `lui a0,0x21` is 0x0000000000021000, which means "load upper immediate" instruction is completed.<br><br>
 <img src = "https://github.com/user-attachments/assets/04965af0-ac85-408e-b029-be3b47b32bd1" width = "700" height ="400">
+
+# Instruction types of RISCV compiler
+## 1.R-Type:
+The Register type instructions involve operations carried out on the register rather than memory locations. This format of instructions are used to perform arithmetic and logical operations.<br>
+* OP-code or Operation code field is 7 bit in lenght and it specifies the type of instuction format used such as r-type, s-type, or j-type. <br>
+* rd or Destination register field is 5 bits in lenght which indicates the register to which the result of the operation is stored.<br>
+* rs and rt are the two source registers which are 5 bits each in lenght.<br>
+* funct3 feild is 3 bit long and it indicates the type of operation performed such as addition, subratiocn or logical operation.<br>
+* funct7 feild also specifies the type of operation ie., wheather multiplication or shift operation is being performed.<br>
+## 2. I-Type:
+* Immediet feild is the first 12 bits of the instuction which stores the address of the memory location.<br>
+All other feilds are similar to that of R-Type format.<br>
+## 3. J-Type:
+J-type instruction is used to perform a jump to a specified memory location. This type of instruction can be used while implementing loops or to transfer control within the program. It has two feilds for immediete values and one feild to speicfy register.
+
+## 4. U-Type:
+
+
 
 
