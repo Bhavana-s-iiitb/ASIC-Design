@@ -58,22 +58,77 @@ Object dump command can be used to display the assembly instructions and corresp
 For example, the value of register a0 before the execution was 0x0000000000000001 and content in a0 after excetion of `lui a0,0x21` is 0x0000000000021000, which means "load upper immediate" instruction is completed.<br><br>
 <img src = "https://github.com/user-attachments/assets/04965af0-ac85-408e-b029-be3b47b32bd1" width = "700" height ="400">
 
-# Instruction types of RISCV compiler
-## 1.R-Type:
+# Instruction types in RISC-V
+![image](https://github.com/user-attachments/assets/1b34ccc8-a87f-435b-9096-cc76b8b48c2b)
+
+
+### 1.R-Type:
 The Register type instructions involve operations carried out on the register rather than memory locations. This format of instructions are used to perform arithmetic and logical operations.<br>
 * OP-code or Operation code field is 7 bit in lenght and it specifies the type of instuction format used such as r-type, s-type, or j-type. <br>
 * rd or Destination register field is 5 bits in lenght which indicates the register to which the result of the operation is stored.<br>
 * rs and rt are the two source registers which are 5 bits each in lenght.<br>
 * funct3 feild is 3 bit long and it indicates the type of operation performed such as addition, subratiocn or logical operation.<br>
 * funct7 feild also specifies the type of operation ie., wheather multiplication or shift operation is being performed.<br>
-## 2. I-Type:
-* Immediet feild is the first 12 bits of the instuction which stores the address of the memory location.<br>
+### 2. I-Type:
+I-Type format is used for instructions that operate with immediate value.
+* Immediate feild is the first 12 bits of the instuction which stores the address of the memory location.<br>
 All other feilds are similar to that of R-Type format.<br>
-## 3. J-Type:
-J-type instruction is used to perform a jump to a specified memory location. This type of instruction can be used while implementing loops or to transfer control within the program. It has two feilds for immediete values and one feild to speicfy register.
+### 3. J-Type:
+J-type instruction is used to perform an unconditional jump to a specified memory location. This type of instruction can be used while implementing loops or to transfer control within the program. It has two feilds for immediete values and one feild to speicfy register.
 
-## 4. U-Type:
+### 4. U-Type:
+U-Type format is used to load 20 bit immedeiate value into a register.<br>
 
+Examples:
 
+### 5. S-Type:
+S-Type instructions store value from register to the specified memory location.
 
+### 6. B-Type:
+B-Type instructions are used to perform conditional jumps.
 
+Conversion of given Assemble level code into machine level code:
+<br>
+
+ | Instructions | Instruction Type | 32 bit code | Hex code |
+| 	:-----:	 | 	:-----:	 | 	:-----:	 | :-----: |
+| ADD r6, r7, r8 | R-Type | 0000000010000011100000110011001 | 0x00F30333|
+| SUB r8, r6, r7 | R-Type | 01000000011100110000010000110011 | 0x40C303B3 |
+| AND r7, r6, r8 | R-Type | 00000000100000110000001110110011 | 0x00C32333 |
+| OR r8, r7, r5 | R-Type | 000000000101001111100100001100111 | 0x00B32333 |
+| XOR r8, r6, r4 | R-Type| 00000000010000110100010000110011 | 0x00034333 |
+| SLT r10, r2, r4 | R-Type | 00000000010000010010010100110011 | 0x000282333
+| ADDI r12, r3, 5 | I-Type |
+| SW r3, r1, 4 | I-Type
+| SRL r16, r11, r2| R-Type |
+| BNE r0, r1, 20| B-Type |
+| BEQ r0, r0, 15 | B-Type |
+| LW r13, r11, 2 | I-TYpe |
+| SLL r15, r11, r2 | R-Type |
+
+<br>
+"Identify various RISC-V instruction type (R, I, S, B, U, J) and exact 32-bit instruction code in the instruction type format for below RISC-V instructions
+ ADD r6, r7, r8
+ SUB r8, r6, r7
+ AND r7, r6, r8
+ OR r8, r7, r5
+ XOR r8, r6, r4
+ SLT r10, r2, r4
+ ADDI r12, r3, 5
+ SW r3, r1, 4
+ SRL r16, r11, r2
+ BNE r0, r1, 20
+ BEQ r0, r0, 15
+ LW r13, r11, 2
+ SLL r15, r11, r2
+  
+ Upload the 32-bit pattern on Github"
+ <br>
+
+ | 	header1	 | 	header2	 | 	header3	 | 
+| 	:-----:	 | 	:-----:	 | 	:-----:	 | 
+| 	Value1	| 	Value2	| 	Value3	 | 
+| 	Value1	| 	Value2	| 	Value3	 | 
+| 	Value1	| 	Value2	| 	Value3	 | 
+| 	Value1	| 	Value2	| 	Value3	 | 
+| 	Value1	| 	Value2	| 	Value3	 | 
