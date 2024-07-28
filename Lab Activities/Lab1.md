@@ -58,7 +58,7 @@ Object dump command can be used to display the assembly instructions and corresp
 For example, the value of register a0 before the execution was 0x0000000000000001 and content in a0 after excetion of `lui a0,0x21` is 0x0000000000021000, which means "load upper immediate" instruction is completed.<br><br>
 <img src = "https://github.com/user-attachments/assets/04965af0-ac85-408e-b029-be3b47b32bd1" width = "700" height ="400">
 
-# Instruction types in RISC-V
+# Lab 3: Instruction types in RISC-V
 ![image](https://github.com/user-attachments/assets/1b34ccc8-a87f-435b-9096-cc76b8b48c2b)
 
 
@@ -87,7 +87,7 @@ S-Type instructions store value from register to the specified memory location.
 ### 6. B-Type:
 B-Type instructions are used to perform conditional jumps.
 
-Conversion of given Assemble level code into machine level code:
+### Conversion of given Assemble level code into machine level code:
 <br>
 
  | Instructions | Instruction Type | 32 bit code | Hex code |
@@ -98,37 +98,12 @@ Conversion of given Assemble level code into machine level code:
 | OR r8, r7, r5 | R-Type | 000000000101001111100100001100111 | 0x00B32333 |
 | XOR r8, r6, r4 | R-Type| 00000000010000110100010000110011 | 0x00034333 |
 | SLT r10, r2, r4 | R-Type | 00000000010000010010010100110011 | 0x000282333
-| ADDI r12, r3, 5 | I-Type |
-| SW r3, r1, 4 | I-Type
-| SRL r16, r11, r2| R-Type |
-| BNE r0, r1, 20| B-Type |
-| BEQ r0, r0, 15 | B-Type |
-| LW r13, r11, 2 | I-TYpe |
-| SLL r15, r11, r2 | R-Type |
+| ADDI r12, r3, 5 | I-Type | 00000000010100011000011000010011 | 0x00D30313 |
+| SW r3, r1, 4 | I-Type | 00000000001100001010001000100011 | 0x00012023 |
+| SRL r16, r11, r2| R-Type | 00000000001001011101100000110011 | 0x002B0A33 |
+| BNE r0, r1, 20| B-Type | 0001010000100000001010101100011 | 0x01400063 |
+| BEQ r0, r0, 15 | B-Type | 00011100000000000000000001100011 | 0x00000F63 |
+| LW r13, r11, 2 | I-TYpe | 00000000001001011010011010000011 | 0x0026A023
+| SLL r15, r11, r2 | R-Type | 00000000001001011001011110110011 | 0x002B5B33 |
 
 <br>
-"Identify various RISC-V instruction type (R, I, S, B, U, J) and exact 32-bit instruction code in the instruction type format for below RISC-V instructions
- ADD r6, r7, r8
- SUB r8, r6, r7
- AND r7, r6, r8
- OR r8, r7, r5
- XOR r8, r6, r4
- SLT r10, r2, r4
- ADDI r12, r3, 5
- SW r3, r1, 4
- SRL r16, r11, r2
- BNE r0, r1, 20
- BEQ r0, r0, 15
- LW r13, r11, 2
- SLL r15, r11, r2
-  
- Upload the 32-bit pattern on Github"
- <br>
-
- | 	header1	 | 	header2	 | 	header3	 | 
-| 	:-----:	 | 	:-----:	 | 	:-----:	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
-| 	Value1	| 	Value2	| 	Value3	 | 
