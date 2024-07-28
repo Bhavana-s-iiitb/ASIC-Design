@@ -24,7 +24,8 @@ Output gives the machine level instructions of the program:<br>
 #### -o1 optimization
 <img src = "https://github.com/user-attachments/assets/126de2b8-05e5-4d38-a8c5-76609764fb0b" width="400" height="400">
 <br>
-#### Using -ofast instead of -o1 
+
+### Using -ofast instead of -o1 
 ![A10](https://github.com/user-attachments/assets/5317125d-f3c6-40c3-81e1-fd7e4070fe04)
 #### Less number of instructions compared to -o1 indicating more optimization
 ![A11](https://github.com/user-attachments/assets/716a8280-d868-4ff1-81ad-c600bdce297e)
@@ -59,8 +60,8 @@ For example, the value of register a0 before the execution was 0x000000000000000
 <img src = "https://github.com/user-attachments/assets/04965af0-ac85-408e-b029-be3b47b32bd1" width = "700" height ="400">
 
 # Lab 3: Instruction types in RISC-V
-![image](https://github.com/user-attachments/assets/1b34ccc8-a87f-435b-9096-cc76b8b48c2b)
 
+<img width="772" alt="Instruction format" src="https://github.com/user-attachments/assets/9d973526-ae08-4854-bee5-1c001c16389a">
 
 ### 1.R-Type:
 The Register type instructions involve operations carried out on the register rather than memory locations. This format of instructions are used to perform arithmetic and logical operations.<br>
@@ -69,25 +70,30 @@ The Register type instructions involve operations carried out on the register ra
 * rs and rt are the two source registers which are 5 bits each in lenght.<br>
 * funct3 feild is 3 bit long and it indicates the type of operation performed such as addition, subratiocn or logical operation.<br>
 * funct7 feild also specifies the type of operation ie., wheather multiplication or shift operation is being performed.<br>
+Example: ADD r1, r2, r3 --> Adds the content in r3 and r2 and stores the sum in r1.
 ### 2. I-Type:
 I-Type format is used for instructions that operate with immediate value.
 * Immediate feild is the first 12 bits of the instuction which stores the address of the memory location.<br>
 All other feilds are similar to that of R-Type format.<br>
+Example: lw  r1, 10(r3) --> r1 = content in the memory location of (10+r3).
 ### 3. J-Type:
-J-type instruction is used to perform an unconditional jump to a specified memory location. This type of instruction can be used while implementing loops or to transfer control within the program. It has two feilds for immediete values and one feild to speicfy register.
+J-type instruction is used to perform an unconditional jump to a specified memory location. This type of instruction can be used while implementing loops or to transfer control within the program. It has two feilds for immediate values and one feild to speicfy register.
+Example: jal rd, 10
 
 ### 4. U-Type:
-U-Type format is used to load 20 bit immedeiate value into a register.<br>
+U-Type format is used to load 20 bit immediate value into a register.<br>
 
-Examples:
+Examples: lui r4, 20 ---> load upper immediate.
 
 ### 5. S-Type:
-S-Type instructions store value from register to the specified memory location.
+S-Type instructions store value from register to the specified memory location. The format consists of one source register, an immediate value and another register.<br>
+Example sw r4, 20(r1)
 
 ### 6. B-Type:
-B-Type instructions are used to perform conditional jumps.
+B-Type instructions are used to perform conditional jumps.Here the condition is checked first and if the condition is true then the control jumps to the specified memory location.<br>
+Example: BEQ r1,r2,25 --> if r1=r2 is true then, control jumps to the instruction stored in the immidiate valeu.
 
-### Conversion of given Assemble level code into machine level code:
+### Conversion of given assemble level code into machine level code:
 <br>
 
  | Instructions | Instruction Type | 32 bit code | Hex code |
@@ -99,7 +105,7 @@ B-Type instructions are used to perform conditional jumps.
 | XOR r8, r6, r4 | R-Type| 00000000010000110100010000110011 | 0x00034333 |
 | SLT r10, r2, r4 | R-Type | 00000000010000010010010100110011 | 0x000282333
 | ADDI r12, r3, 5 | I-Type | 00000000010100011000011000010011 | 0x00D30313 |
-| SW r3, r1, 4 | I-Type | 00000000001100001010001000100011 | 0x00012023 |
+| SW r3, r1, 4 | S-Type | 00000000001100001010001000100011 | 0x00012023 |
 | SRL r16, r11, r2| R-Type | 00000000001001011101100000110011 | 0x002B0A33 |
 | BNE r0, r1, 20| B-Type | 0001010000100000001010101100011 | 0x01400063 |
 | BEQ r0, r0, 15 | B-Type | 00011100000000000000000001100011 | 0x00000F63 |
