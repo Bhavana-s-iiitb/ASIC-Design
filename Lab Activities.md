@@ -1,3 +1,10 @@
+## ASIC Design Class
+# Table of Contents
+  - [ Lab 1: Executing a simple c program on virtual machine using gcc ](https://github.com/Bhavana-s-iiitb/asic-design-class/edit/main/Lab%20Activities.md#lab-1-executing-a-simple-c-program-on-virtual-machine-using-gcc)
+  - [ Executing the c program using riscv64 ](https://github.com/Bhavana-s-iiitb/asic-design-class/edit/main/Lab%20Activities.md#lab-2-executing-program-using-riscv-compiler)
+  - [ Instruction types in RISC-V ](https://github.com/Bhavana-s-iiitb/asic-design-class/edit/main/Lab%20Activities.md#lab-3-instruction-types-in-risc-v)
+  - [ Functional Simulation ]()
+
 ## Lab 1: Executing a simple c program on virtual machine using gcc
 ### Step 1:Creating a .c file using leafpad editor 
 leafpad is the editor which can be installed using the command<br> 
@@ -41,7 +48,7 @@ This gives the sum of numbers from 1 to n.
 <br>
 ## Command to debug the program
 
-``spike -d pk sum1ton.o``
+``spike -d pk sum1ton.o`` 
 <br>
 A debbuger is opened.<br>
 <br>
@@ -120,16 +127,36 @@ It is an implementation of the Verilog hardware description language. The Icarus
 ### gtkwave:
 It is used to view the VCD(Value Change Dump) waveform.<br>
 #### Output Waveforms
+1. add r6,r1,r2 --> MEM[0] <= 32'h02208300;
 ![A4 2](https://github.com/user-attachments/assets/b23dfe0d-5448-4fc1-bfb4-e29a9869a793)
+<br>
+2. sub r7,r1,r2 --> MEM[1] <= 32'h02209380;
 ![A4 3](https://github.com/user-attachments/assets/d2ccc752-cfba-403a-8c88-4b99132349ea)
+<br>
+3. and r8,r1,r3 --> MEM[2] <= 32'h0230a400;
 ![A4 5](https://github.com/user-attachments/assets/78ecf99c-700e-410d-aa98-ea711032723e)
+<br>
+4. or r9,r2,r5 --> MEM[3] <= 32'h02513480;
 ![A4 6](https://github.com/user-attachments/assets/531f5116-46e6-4ff5-8e8a-c3d6d4be2324)
+<br>
+5. xor r10,r1,r4 --> MEM[4] <= 32'h0240c500;
 ![A4 7](https://github.com/user-attachments/assets/20b0263f-bfd1-462c-99c1-63145710b901)
+<br>
+6. slt r11,r2,r4 --> MEM[6] <= 32'h00520600; 
 ![A4 8](https://github.com/user-attachments/assets/fa85e473-5404-4b43-ab9c-6c9d964f5800)
-![A4 9](https://github.com/user-attachments/assets/fcaab012-617b-4d46-be6a-b4bc9db5dbb9)
+<br> 
+7. addi r12,r4,5 --> MEM[6] <= 32'h00520600;
+![A4 9](https://github.com/user-ttachments/assets/fcaab012-617b-4d46-be6a-b4bc9db5dbb9)
+<br>
+8. sw r3,r1,2 --> MEM[7] <= 32'h00209181;
 ![A4 10](https://github.com/user-attachments/assets/11460434-9cda-423b-9d96-06dda4f02852)
+<br>
+9. lw r13,r1,2 --> MEM[8] <= 32'h00208681;
 ![A4 12](https://github.com/user-attachments/assets/b8a014f4-1e96-4245-8f7d-f51cf46cd272)
+<br>
+10. beq r0,r0,15 --> MEM[9] <= 32'h00f00002; 
 ![A4 13](https://github.com/user-attachments/assets/5cfe6353-0115-49a9-9d2f-17cb39d00108)
-
+<br>
+11. add r14,r2,r2 --> MEM[25] <= 32'h00210700;
 ![A4 14](https://github.com/user-attachments/assets/ef1f9b06-2262-4009-9caa-816ddfefafd8)
 
