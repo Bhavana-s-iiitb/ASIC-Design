@@ -120,5 +120,16 @@ It is an implementation of the Verilog hardware description language. The Icarus
 ### gtkwave:
 It is used to view the VCD(Value Change Dump) waveform.<br>
 #### Output Waveforms
+![A4 2](https://github.com/user-attachments/assets/b23dfe0d-5448-4fc1-bfb4-e29a9869a793)
+![A4 3](https://github.com/user-attachments/assets/d2ccc752-cfba-403a-8c88-4b99132349ea)
+![A4 5](https://github.com/user-attachments/assets/78ecf99c-700e-410d-aa98-ea711032723e)
+![A4 6](https://github.com/user-attachments/assets/531f5116-46e6-4ff5-8e8a-c3d6d4be2324)
+![A4 7](https://github.com/user-attachments/assets/20b0263f-bfd1-462c-99c1-63145710b901)
+![A4 8](https://github.com/user-attachments/assets/fa85e473-5404-4b43-ab9c-6c9d964f5800)
+![A4 9](https://github.com/user-attachments/assets/fcaab012-617b-4d46-be6a-b4bc9db5dbb9)
+![A4 10](https://github.com/user-attachments/assets/11460434-9cda-423b-9d96-06dda4f02852)
+![A4 12](https://github.com/user-attachments/assets/b8a014f4-1e96-4245-8f7d-f51cf46cd272)
+![A4 13](https://github.com/user-attachments/assets/5cfe6353-0115-49a9-9d2f-17cb39d00108)
+
 ![A4 14](https://github.com/user-attachments/assets/ef1f9b06-2262-4009-9caa-816ddfefafd8)
 
