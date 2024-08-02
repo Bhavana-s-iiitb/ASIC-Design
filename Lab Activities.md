@@ -112,4 +112,13 @@ Example: BEQ r1,r2,25 --> if r1=r2 is true then, control jumps to the instructio
 | LW r13, r11, 2 | I-TYpe | 00000000001001011010011010000011 | 0x0026A023
 | SLL r15, r11, r2 | R-Type | 00000000001001011001011110110011 | 0x002B5B33 |
 
-<br>
+
+## Functional Simulation
+### Icarus Verilog:
+It is an implementation of the Verilog hardware description language. The Icarus Verilog compiles the verilog program that can be run to perform the simulation.<br>
+
+### gtkwave:
+It is used to view the VCD(Value Change Dump) waveform.<br>
+#### Output Waveforms
+![A4 14](https://github.com/user-attachments/assets/ef1f9b06-2262-4009-9caa-816ddfefafd8)
+
