@@ -1,5 +1,5 @@
-## ASIC Design Class
-# Table of Contents
+# ASIC Design Class
+## Table of Contents
   - [Executing a simple c program on virtual machine using gcc ](#1-executing-a-simple-c-program-on-virtual-machine-using-gcc)
   - [Executing the c program using riscv64 ](#2-executing-the-c-program-using-riscv64)
   - [ Instruction types in RISC-V ](#3-instruction-types-in-risc-v)
