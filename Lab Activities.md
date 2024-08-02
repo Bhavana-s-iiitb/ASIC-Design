@@ -70,7 +70,7 @@ For example, the value of register a0 before the execution was 0x000000000000000
 
 <img width="772" alt="Instruction format" src="https://github.com/user-attachments/assets/9d973526-ae08-4854-bee5-1c001c16389a">
 
-### 1.R-Type:
+### 3.1 R-Type:
 The Register type instructions involve operations carried out on the register rather than memory locations. This format of instructions are used to perform arithmetic and logical operations.<br>
 * OP-code or Operation code field is 7 bit in lenght and it specifies the type of instuction format used such as r-type, s-type, or j-type. <br>
 * rd or Destination register field is 5 bits in lenght which indicates the register to which the result of the operation is stored.<br>
@@ -78,25 +78,25 @@ The Register type instructions involve operations carried out on the register ra
 * funct3 feild is 3 bit long and it indicates the type of operation performed such as addition, subratiocn or logical operation.<br>
 * funct7 feild also specifies the type of operation ie., wheather multiplication or shift operation is being performed.<br>
 Example: ADD r1, r2, r3 --> Adds the content in r3 and r2 and stores the sum in r1.
-### 2. I-Type:
+### 3.2 I-Type:
 I-Type format is used for instructions that operate with immediate value.
 * Immediate feild is the first 12 bits of the instuction which stores the address of the memory location.<br>
 All other feilds are similar to that of R-Type format.<br>
 Example: lw  r1, 10(r3) --> r1 = content in the memory location of (10+r3).
-### 3. J-Type:
+### 3.3 J-Type:
 J-type instruction is used to perform an unconditional jump to a specified memory location. This type of instruction can be used while implementing loops or to transfer control within the program. It has two feilds for immediate values and one feild to speicfy register.
 Example: jal rd, 10
 
-### 4. U-Type:
+### 3.4 U-Type:
 U-Type format is used to load 20 bit immediate value into a register.<br>
 
 Examples: lui r4, 20 ---> load upper immediate.
 
-### 5. S-Type:
+### 3.5 S-Type:
 S-Type instructions store value from register to the specified memory location. The format consists of one source register, an immediate value and another register.<br>
 Example sw r4, 20(r1)
 
-### 6. B-Type:
+### 3.6 B-Type:
 B-Type instructions are used to perform conditional jumps.Here the condition is checked first and if the condition is true then the control jumps to the specified memory location.<br>
 Example: BEQ r1,r2,25 --> if r1=r2 is true then, control jumps to the instruction stored in the immidiate valeu.
 
