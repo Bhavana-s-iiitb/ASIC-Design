@@ -1,6 +1,6 @@
 ## ASIC Design Class
 # Table of Contents
-  - [ Lab 1: Executing a simple c program on virtual machine using gcc ](https://github.com/Bhavana-s-iiitb/asic-design-class/edit/main/Lab%20Activities.md#lab-1-executing-a-simple-c-program-on-virtual-machine-using-gcc)
+  - [ Lab 1: Executing a simple c program on virtual machine using gcc ]()
   - [ Executing the c program using riscv64 ](https://github.com/Bhavana-s-iiitb/asic-design-class/edit/main/Lab%20Activities.md#lab-2-executing-program-using-riscv-compiler)
   - [ Instruction types in RISC-V ](https://github.com/Bhavana-s-iiitb/asic-design-class/edit/main/Lab%20Activities.md#lab-3-instruction-types-in-risc-v)
   - [ Functional Simulation ]()
