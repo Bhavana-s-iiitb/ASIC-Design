@@ -1,11 +1,11 @@
 ## ASIC Design Class
 # Table of Contents
-  - [Executing a simple c program on virtual machine using gcc ](#executing-a-simple-c-program-on-virtual-machine-using-gcc)
-  - [ Lab 2 Executing the c program using riscv64 ](#lab-2-executing-the-c-program-using-riscv64)
-  - [ Instruction types in RISC-V ](#instruction-types-in-risc-v)
-  - [ Functional Simulation ](#functional-simulation)
+  - [Executing a simple c program on virtual machine using gcc ](#1-executing-a-simple-c-program-on-virtual-machine-using-gcc)
+  - [Executing the c program using riscv64 ](#2-executing-the-c-program-using-riscv64)
+  - [ Instruction types in RISC-V ](#3-instruction-types-in-risc-v)
+  - [ Functional Simulation ](#4-functional-simulation)
 
-## Executing a simple c program on virtual machine using gcc
+## 1 Executing a simple c program on virtual machine using gcc
 ### Step 1:Creating a .c file using leafpad editor 
 leafpad is the editor which can be installed using the command<br> 
 ``"sudo snap install leafpad"``<br>
@@ -23,7 +23,7 @@ A c program file named "sum1ton" is created<br>
 The sum of numbers from 1 to 20 is displayed as shown<br>
 ![A5](https://github.com/user-attachments/assets/b6c230f3-de57-4586-ad71-ec8df1f71fc7)
 
-## Lab 2 Executing the c program using riscv64
+## 2 Executing the c program using riscv64
 ![A7](https://github.com/user-attachments/assets/19a188c5-08b5-42fa-82d1-896f8d207b1c)<br>
 Output gives the machine level instructions of the program:<br>
 ![A8](https://github.com/user-attachments/assets/3b0fc518-3644-43a4-b81d-5a8804e3de15)
@@ -38,15 +38,15 @@ Output gives the machine level instructions of the program:<br>
 ![A11](https://github.com/user-attachments/assets/716a8280-d868-4ff1-81ad-c600bdce297e)
 
 
-# Lab 2 Executing program using RISCV compiler
-## Command to run the program using RISCV compiler:<br>
+## Lab 2 Executing program using RISCV compiler
+### Command to run the program using RISCV compiler:<br>
 ``riscv64-unknown-elf-gcc -ofast -mabi-rv64i -o sum1ton.o sum1ton.c``<br>
 `spike pk sum1ton.o`<br>
 This gives the sum of numbers from 1 to n.
 <br><br>
 ![VSDL3 1](https://github.com/user-attachments/assets/8f30ce99-3b21-44dc-af75-e1afcc1a73f5)
 <br>
-## Command to debug the program
+### Command to debug the program
 
 ``spike -d pk sum1ton.o`` 
 <br>
@@ -61,12 +61,12 @@ Object dump command can be used to display the assembly instructions and corresp
 <br> This gives the content of the assembler.<br><br>
 <img src = "https://github.com/user-attachments/assets/3b0fc518-3644-43a4-b81d-5a8804e3de15" width="650" height="300">
 <br>
-## Command to check the content of registers:<br>
+### Command to check the content of registers:<br>
 `reg 0 <register_name>`<br><br>
 For example, the value of register a0 before the execution was 0x0000000000000001 and content in a0 after excetion of `lui a0,0x21` is 0x0000000000021000, which means "load upper immediate" instruction is completed.<br><br>
 <img src = "https://github.com/user-attachments/assets/04965af0-ac85-408e-b029-be3b47b32bd1" width = "700" height ="400">
 
-# Instruction types in RISC-V
+## 3 Instruction types in RISC-V
 
 <img width="772" alt="Instruction format" src="https://github.com/user-attachments/assets/9d973526-ae08-4854-bee5-1c001c16389a">
 
@@ -120,7 +120,7 @@ Example: BEQ r1,r2,25 --> if r1=r2 is true then, control jumps to the instructio
 | SLL r15, r11, r2 | R-Type | 00000000001001011001011110110011 | 0x002B5B33 |
 
 
-## Functional Simulation
+## 4 Functional Simulation
 ### Icarus Verilog:
 It is an implementation of the Verilog hardware description language. The Icarus Verilog compiles the verilog program that can be run to perform the simulation.<br>
 
