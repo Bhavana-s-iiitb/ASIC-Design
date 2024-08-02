@@ -1,11 +1,11 @@
 ## ASIC Design Class
 # Table of Contents
-  - [ Lab 1 Executing a simple c program on virtual machine using gcc ]()
+  - [Executing a simple c program on virtual machine using gcc ](#executing-a-simple-c-program-on-virtual-machine-using-gcc)
   - [ Lab 2 Executing the c program using riscv64 ](#lab-2-executing-the-c-program-using-riscv64)
-  - [ Instruction types in RISC-V ](https://github.com/Bhavana-s-iiitb/asic-design-class/edit/main/Lab%20Activities.md#lab-3-instruction-types-in-risc-v)
-  - [ Functional Simulation ]()
+  - [ Instruction types in RISC-V ](#instruction-types-in-risc-v)
+  - [ Functional Simulation ](#functional-simulation)
 
-## Lab 1 Executing a simple c program on virtual machine using gcc
+## Executing a simple c program on virtual machine using gcc
 ### Step 1:Creating a .c file using leafpad editor 
 leafpad is the editor which can be installed using the command<br> 
 ``"sudo snap install leafpad"``<br>
@@ -66,7 +66,7 @@ Object dump command can be used to display the assembly instructions and corresp
 For example, the value of register a0 before the execution was 0x0000000000000001 and content in a0 after excetion of `lui a0,0x21` is 0x0000000000021000, which means "load upper immediate" instruction is completed.<br><br>
 <img src = "https://github.com/user-attachments/assets/04965af0-ac85-408e-b029-be3b47b32bd1" width = "700" height ="400">
 
-# Lab 3: Instruction types in RISC-V
+# Instruction types in RISC-V
 
 <img width="772" alt="Instruction format" src="https://github.com/user-attachments/assets/9d973526-ae08-4854-bee5-1c001c16389a">
 
