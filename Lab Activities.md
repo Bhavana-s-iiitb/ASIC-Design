@@ -133,11 +133,11 @@ Example: BEQ r1,r2,25 --> if r1=r2 is true then, control jumps to the instructio
 | SLT r10, r2, r4 | 0x00412533 | 0x0044502A |
 | ADDI r12, r3, 5 | 0x00518303 | 0x206C0005 |
 | SW r3, r1, 4 | 0x0030A223 | 0xAC230004 |
-| SRL r16, r11, r2 | 0x0025D833 | 0x00
+| SRL r16, r11, r2 | 0x0025D833 | 0x1628006 |
 | BNE r0, r1, 20 | 0x01400063 | 0x14010014 |
 | BEQ r0, r0, 15 | 0x00000F63 | 0x2000000F |
 | LW r13, r11, 2 | 0x0025A683 | 0x46B60002 |
-| SLL r15, r11, r2 | 0x002597B3 | 0x00
+| SLL r15, r11, r2 | 0x002597B3 | 0x1627804 |
 
 # 4 Functional Simulation
 ### Icarus Verilog:
