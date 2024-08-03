@@ -116,9 +116,26 @@ Example: BEQ r1,r2,25 --> if r1=r2 is true then, control jumps to the instructio
 | SRL r16, r11, r2| R-Type | 00000000001001011101100000110011 | 0x0025D833 |
 | BNE r0, r1, 20| B-Type | 0000010000100000001010001100011 | 0x01400063 |
 | BEQ r0, r0, 15 | B-Type | 00011100000000000000000001100011 | 0x00000F63 |
-| LW r13, r11, 2 | I-TYpe | 00000000001001011010011010000011 | 0x0026A023
-| SLL r15, r11, r2 | R-Type | 00000000001001011001011110110011 | 0x002B5B33 |
+| LW r13, r11, 2 | I-TYpe | 00000000001001011010011010000011 | 0x0025A683 |
+| SLL r15, r11, r2 | R-Type | 00000000001001011001011110110011 | 0x002597B3 |
 
+### Difference between RISC-V ISA and Hardcore ISA
+<img width="905" alt="image" src="https://github.com/user-attachments/assets/ec736852-e82a-4f01-8d63-88df6567c737">
+| Instructions | RISC-V ISA | Hardcore ISA |
+| 	:-----:	 | 	:-----:	 | 	:-----:	 | 
+| ADD r6, r7, r8 | 0x00F30333|
+| SUB r8, r6, r7 | 0x40C303B3 |
+| AND r7, r6, r8 | 0x008373B3 |
+| OR r8, r7, r5 | 0x0053E433 |
+| XOR r8, r6, r4 | 0x00434433 |
+| SLT r10, r2, r4 | 0x00412533 |
+| ADDI r12, r3, 5 | 0x00518303 |
+| SW r3, r1, 4 | 0x0030A223 |
+| SRL r16, r11, r2 | 0x0025D833 |
+| BNE r0, r1, 20 | 0x01400063 |
+| BEQ r0, r0, 15 | 0x00000F63 |
+| LW r13, r11, 2 | 0x0025A683 |
+| SLL r15, r11, r2 | 0x002597B3 |
 
 ## 4 Functional Simulation
 ### Icarus Verilog:
