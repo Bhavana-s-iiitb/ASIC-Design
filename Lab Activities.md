@@ -123,19 +123,19 @@ Example: BEQ r1,r2,25 --> if r1=r2 is true then, control jumps to the instructio
 <img width="905" alt="image" src="https://github.com/user-attachments/assets/ec736852-e82a-4f01-8d63-88df6567c737">
 | Instructions | RISC-V ISA | Hardcore ISA |
 | 	:-----:	 | 	:-----:	 | 	:-----:	 | 
-| ADD r6, r7, r8 | 0x00F30333|
-| SUB r8, r6, r7 | 0x40C303B3 |
-| AND r7, r6, r8 | 0x008373B3 |
-| OR r8, r7, r5 | 0x0053E433 |
-| XOR r8, r6, r4 | 0x00434433 |
-| SLT r10, r2, r4 | 0x00412533 |
-| ADDI r12, r3, 5 | 0x00518303 |
-| SW r3, r1, 4 | 0x0030A223 |
-| SRL r16, r11, r2 | 0x0025D833 |
-| BNE r0, r1, 20 | 0x01400063 |
-| BEQ r0, r0, 15 | 0x00000F63 |
-| LW r13, r11, 2 | 0x0025A683 |
-| SLL r15, r11, r2 | 0x002597B3 |
+| ADD r6, r7, r8 | 0x00F30333| 0x00E83020 |
+| SUB r8, r6, r7 | 0x40C303B3 | 0x00C74022 |
+| AND r7, r6, r8 | 0x008373B3 | 0x00C83824 |
+| OR r8, r7, r5 | 0x0053E433 | 0x00E54025 |
+| XOR r8, r6, r4 | 0x00434433 | 0x00C44026 |
+| SLT r10, r2, r4 | 0x00412533 | 0x0044502A |
+| ADDI r12, r3, 5 | 0x00518303 | 0x206C0005 |
+| SW r3, r1, 4 | 0x0030A223 | 0xAC230004 |
+| SRL r16, r11, r2 | 0x0025D833 | 0x00
+| BNE r0, r1, 20 | 0x01400063 | 0x14010014 |
+| BEQ r0, r0, 15 | 0x00000F63 | 0x2000000F |
+| LW r13, r11, 2 | 0x0025A683 | 0x46B60002 |
+| SLL r15, r11, r2 | 0x002597B3 | 0x00
 
 ## 4 Functional Simulation
 ### Icarus Verilog:
