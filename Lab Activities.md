@@ -4,6 +4,7 @@
   - [Executing the c program using riscv64 ](#2-executing-the-c-program-using-riscv64)
   - [ Instruction types in RISC-V ](#3-instruction-types-in-risc-v)
   - [ Functional Simulation ](#4-functional-simulation)
+  - [ Application program compilation](# 5 Compilation of an application program with gcc and risc-v gcc)
 
 # 1 Executing a simple c program on virtual machine using gcc
 ### Step 1:Creating a .c file using leafpad editor 
@@ -177,10 +178,81 @@ It is used to view the VCD(Value Change Dump) waveform.<br>
 11. add r14,r2,r2 --> MEM[25] <= 32'h00210700;
 ![A4 14](https://github.com/user-attachments/assets/ef1f9b06-2262-4009-9caa-816ddfefafd8)
 
-# Compile an application program with gcc and risc-v gcc
+# 5 Compilation of an application program with gcc and risc-v gcc
 ### Application: Currency Converter
 c program:
-<br>
-Compilation using gcc and risc-v gcc:
+
+```
+#include <stdio.h>
+ 
+int main()
+{
+  float amount;
+  float rupee, dollar, pound, euro;
+  int choice;
+ 
+  printf("Following are the Choices:");
+  printf("\nEnter 1: Ruppe");
+  printf("\nEnter 2: Dollar");
+  printf("\nEnter 3: Pound");
+  printf("\nEnter 4: Euro");
+  choice = 1;
+  amount = 274;
+  switch (choice)
+  {
+    case 1: // Ruppe Conversion
+        dollar = amount / 83;
+        printf("%.2f Rupee =  %.2f dollar", amount, dollar);
+ 
+        pound = amount / 107;
+        printf("\n%.2f Rupee =  %.2f pound", amount, pound);
+ 
+        euro = amount / 92.5 ;
+        printf("\n%.2f Rupee =  %.2f euro", amount, euro);
+        break;
+ 
+    case 2: // Dollar Conversion
+        rupee = amount * 83;
+        printf("\n%.2f Dollar =  %.2f rupee", amount, rupee);
+ 
+        pound = amount *0.78;
+        printf("\n%.2f Dollar =  %.2f pound", amount, pound);
+ 
+        euro = amount *0.87;
+        printf("\n%.2f Dollar =  %.2f euro", amount, euro);
+        break;
+ 
+    case 3: // Pound Conversion
+        rupee = amount * 107;
+        printf("\n%.2f Pound =  %.2f rupee", amount, rupee);
+ 
+        dollar = amount *1.26;
+        printf("\n%.2f Pound =  %.2f dollar", amount, dollar);
+ 
+        euro = amount *92.5;
+        printf("\n%.2f Pound =  %.2f euro", amount, euro);
+        break;
+ 
+    case 4: // Euro Conversion
+        rupee = amount * 83;
+        printf("\n%.2f Euro =  %.2f rupee", amount, rupee);
+ 
+        dollar = amount *1.14;
+        printf("\n%.2f Euro =  %.2f dollar", amount, dollar);
+ 
+        pound = amount *0.90;
+        printf("\n.2%f Euro =  %.2f pound", amount, pound);
+        break;
+ 
+     //Default case
+    default:
+        printf("\nInvalid Input");
+  }
+ 
+  return 0;
+}
+```
+
+### Compilation using gcc and risc-v gcc:
 ![14 3](https://github.com/user-attachments/assets/e95150b2-8caf-4662-a088-885078c9b784)
 
