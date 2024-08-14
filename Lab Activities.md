@@ -1,7 +1,7 @@
 # ASIC Design Class
 ## Table of Contents
-  - [Executing a simple c program on virtual machine using gcc ](#1-executing-a-simple-c-program-on-virtual-machine-using-gcc)
-  - [Executing the c program using riscv64 ](#2-executing-the-c-program-using-riscv64)
+  - [ Executing a simple c program on virtual machine using gcc ](#1-executing-a-simple-c-program-on-virtual-machine-using-gcc)
+  - [ Executing the c program using riscv64 ](#2-executing-the-c-program-using-riscv64)
   - [ Instruction types in RISC-V ](#3-instruction-types-in-risc-v)
   - [ Functional Simulation ](#4-functional-simulation)
   - [ Application program compilation](#5-compilation-of-an-application-program-with-gcc-and-risc-v-gcc)
@@ -24,7 +24,7 @@ A c program file named "sum1ton" is created<br>
 The sum of numbers from 1 to 20 is displayed as shown<br>
 ![A5](https://github.com/user-attachments/assets/b6c230f3-de57-4586-ad71-ec8df1f71fc7)
 
-# Lab 2 Executing program using RISCV compiler
+# 2 Executing the c program using riscv64
 ### Command to run the program using RISCV compiler:<br>
 ``riscv64-unknown-elf-gcc -ofast -mabi-rv64i -o sum1ton.o sum1ton.c``<br>
 `spike pk sum1ton.o`<br>
