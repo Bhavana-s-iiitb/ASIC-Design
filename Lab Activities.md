@@ -4,7 +4,7 @@
   - [Executing the c program using riscv64 ](#2-executing-the-c-program-using-riscv64)
   - [ Instruction types in RISC-V ](#3-instruction-types-in-risc-v)
   - [ Functional Simulation ](#4-functional-simulation)
-  - [ Application program compilation](# 5 Compilation of an application program with gcc and risc-v gcc)
+  - [ Application program compilation](#5-compilation-of-an-application-program-with-gcc-and-risc-v-gcc)
 
 # 1 Executing a simple c program on virtual machine using gcc
 ### Step 1:Creating a .c file using leafpad editor 
