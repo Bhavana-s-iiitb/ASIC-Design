@@ -23,7 +23,15 @@ A c program file named "sum1ton" is created<br>
 The sum of numbers from 1 to 20 is displayed as shown<br>
 ![A5](https://github.com/user-attachments/assets/b6c230f3-de57-4586-ad71-ec8df1f71fc7)
 
-## 2 Executing the c program using riscv64
+# Lab 2 Executing program using RISCV compiler
+### Command to run the program using RISCV compiler:<br>
+``riscv64-unknown-elf-gcc -ofast -mabi-rv64i -o sum1ton.o sum1ton.c``<br>
+`spike pk sum1ton.o`<br>
+This gives the sum of numbers from 1 to n.
+<br><br>
+![VSDL3 1](https://github.com/user-attachments/assets/8f30ce99-3b21-44dc-af75-e1afcc1a73f5)
+<br>
+
 ![A7](https://github.com/user-attachments/assets/19a188c5-08b5-42fa-82d1-896f8d207b1c)<br>
 Output gives the machine level instructions of the program:<br>
 ![A8](https://github.com/user-attachments/assets/3b0fc518-3644-43a4-b81d-5a8804e3de15)
@@ -38,19 +46,13 @@ Output gives the machine level instructions of the program:<br>
 ![A11](https://github.com/user-attachments/assets/716a8280-d868-4ff1-81ad-c600bdce297e)
 
 
-# Lab 2 Executing program using RISCV compiler
-### Command to run the program using RISCV compiler:<br>
-``riscv64-unknown-elf-gcc -ofast -mabi-rv64i -o sum1ton.o sum1ton.c``<br>
-`spike pk sum1ton.o`<br>
-This gives the sum of numbers from 1 to n.
-<br><br>
-![VSDL3 1](https://github.com/user-attachments/assets/8f30ce99-3b21-44dc-af75-e1afcc1a73f5)
-<br>
+
+
 ### Command to debug the program
 
-``spike -d pk sum1ton.o`` 
+`spike -d pk sum1ton.o`
 <br>
-A debbuger is opened.<br>
+A debbuger is opened.
 <br>
 To run the assembly code line by line, following command is used:<br>
 `until pc 0 100b0`<br><br>
@@ -174,4 +176,11 @@ It is used to view the VCD(Value Change Dump) waveform.<br>
 
 11. add r14,r2,r2 --> MEM[25] <= 32'h00210700;
 ![A4 14](https://github.com/user-attachments/assets/ef1f9b06-2262-4009-9caa-816ddfefafd8)
+
+# Compile an application program with gcc and risc-v gcc
+### Application: Currency Converter
+c program:
+<br>
+Compilation using gcc and risc-v gcc:
+![14 3](https://github.com/user-attachments/assets/e95150b2-8caf-4662-a088-885078c9b784)
 
