@@ -47,3 +47,20 @@ Transaction Level verilog is the evolution of system verilog. TL-Verilog is spec
 
 ### Branch
 <img width="960" alt="Screenshot 2024-08-21 112334" src="https://github.com/user-attachments/assets/160e4e8c-94c4-44c7-8640-c872ff25ed01">
+
+### Final CPU
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/f3b3efb3-8a16-4b1d-bb32-e1dcd33c69e0">
+<img width="870" alt="Screenshot 2024-08-21 192544" src="https://github.com/user-attachments/assets/d699bf3c-3126-4eb4-86ff-b2914465ecb6">
+Iterative addition of numbers from 1 to 9:
+<img width="818" alt="Screenshot 2024-08-21 192152" src="https://github.com/user-attachments/assets/9ce2cfe5-38d2-495a-ade7-c01dc9d85bb3">
+
+<img width="859" alt="Screenshot 2024-08-21 192348" src="https://github.com/user-attachments/assets/0412f614-56de-42ad-a2e9-d7da25a6386a">
+
+<img width="874" alt="Screenshot 2024-08-21 192406" src="https://github.com/user-attachments/assets/ece17b58-9a04-4d42-9274-c1a9e6213e72">
+<img width="857" alt="Screenshot 2024-08-21 192420" src="https://github.com/user-attachments/assets/022fe8f8-6e2c-420d-a0a6-092c7dca3488">
+Similarly after 56 cycles, the total sum of numbers from 1 to 9 is calculated and stored in reg10 as shown in below image. 
+<img width="877" alt="Screenshot 2024-08-21 192246" src="https://github.com/user-attachments/assets/bc8427f7-fb82-4c84-a9a1-584a75864226">
+
+
+
