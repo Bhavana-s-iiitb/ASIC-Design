@@ -18,7 +18,7 @@
    
    |calc
       @1
-         $clk_tan = *clk;
+         $clk_bha = *clk;
          $reset = *reset;
          $val1[31:0] = >>1$result[31:0];
          $val2[31:0] = $rand2[3:0];
