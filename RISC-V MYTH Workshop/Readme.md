@@ -17,17 +17,17 @@ Transaction Level verilog is the evolution of system verilog. TL-Verilog is spec
 #### 2.Sequential Calculator
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/02e6658b-fd75-4990-ab1a-7fecb51c4fae">
 
-#### 2Cycle Calculator
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/9d0b1f89-cab2-4cfc-877e-5de96321ced9">
-
-#### Calculator with counter in pipeline
+#### Counter and calculator in pipeline
 <img width="960" alt="Screenshot 2024-08-21 071843" src="https://github.com/user-attachments/assets/23ec1f0b-f838-4a41-a55b-f0025736f86d">
+
+#### 2 Cycle Calculator
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/9d0b1f89-cab2-4cfc-877e-5de96321ced9">
 
 #### 2 Cycle calculator with validity
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/04f212b6-c04f-4272-870c-5becb6012cbd">
 
-#### 6. Calculator with Single memory
+#### 6. Calculator with Single-Value memory
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/a9816a48-5275-40af-b2d4-4757e74bca9a">
 
@@ -51,7 +51,7 @@ Transaction Level verilog is the evolution of system verilog. TL-Verilog is spec
 <img width="960" alt="Screenshot 2024-08-21 194140" src="https://github.com/user-attachments/assets/a446e7da-cd4d-4d58-b509-e6b71a897486">
 
 
-### Complete Pipelined CPU
+## Complete Pipelined CPU
 Calculating the sum of nummbers from 1 to 9:
 <br> 
 
