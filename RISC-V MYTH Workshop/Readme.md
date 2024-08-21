@@ -51,7 +51,9 @@ Transaction Level verilog is the evolution of system verilog. TL-Verilog is spec
 <img width="960" alt="Screenshot 2024-08-21 194140" src="https://github.com/user-attachments/assets/a446e7da-cd4d-4d58-b509-e6b71a897486">
 
 
-### Final CPU
+### Complete Pipelined CPU
+Calculating the sum of nummbers from 1 to 9:
+<br> 
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/f3b3efb3-8a16-4b1d-bb32-e1dcd33c69e0">
 <img width="870" alt="Screenshot 2024-08-21 192544" src="https://github.com/user-attachments/assets/d699bf3c-3126-4eb4-86ff-b2914465ecb6">
