@@ -11,10 +11,10 @@ The following tasks are all done with Makerchip IDE.
 ### TL Verilog:
 Transaction Level verilog is the evolution of system verilog. TL-Verilog is specifically designed for modeling hardware
 
-### Combinational Calculator
+#### 1.Combinational Calculator
 <img width="960" alt="Screenshot 2024-08-20 171113" src="https://github.com/user-attachments/assets/662d6cd0-a929-4f33-a465-66fb2bcee8c8">
 
-### Sequential Calculator
+#### 2.Sequential Calculator
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/02e6658b-fd75-4990-ab1a-7fecb51c4fae">
 
 ### 2Cycle Calculator
@@ -27,11 +27,11 @@ Transaction Level verilog is the evolution of system verilog. TL-Verilog is spec
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/04f212b6-c04f-4272-870c-5becb6012cbd">
 
-### Calculator with Single memory
+#### 6. Calculator with Single memory
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/a9816a48-5275-40af-b2d4-4757e74bca9a">
 
-## Day 4
+## RISC-V CPU Microarchitecture
 ### Next PC
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/ba7313d4-d199-4ed3-b5a6-b29e1bc8fbd2">
 
