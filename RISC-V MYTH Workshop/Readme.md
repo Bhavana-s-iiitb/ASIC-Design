@@ -1,3 +1,16 @@
+### Makerchip:
+Makerchip is a free online IDE for developing in Verilog or TL-Verilog with following features:
+- Organized waveforms
+- Easy pipelining
+- Organized diagrams
+- Tool Integrations
+<br>
+The following tasks are all done with Makerchip IDE.
+<br>
+
+### TL Verilog:
+Transaction Level verilog is the evolution of system verilog. TL-Verilog is specifically designed for modeling hardware
+
 ### Combinational Calculator
 <img width="960" alt="Screenshot 2024-08-20 171113" src="https://github.com/user-attachments/assets/662d6cd0-a929-4f33-a465-66fb2bcee8c8">
 
