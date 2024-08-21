@@ -32,20 +32,18 @@ Transaction Level verilog is the evolution of system verilog. TL-Verilog is spec
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/a9816a48-5275-40af-b2d4-4757e74bca9a">
 
 ## RISC-V CPU Microarchitecture
-### Next PC
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/ba7313d4-d199-4ed3-b5a6-b29e1bc8fbd2">
-
-### Instruction Fetch
+### 1. Instruction Fetch
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/3ed3f427-98a1-420f-a9c8-15873a0beafa">
 
-### Instruction Decode
+### 2. Instruction Decode
 <img width="960" alt="Screenshot 2024-08-21 111020" src="https://github.com/user-attachments/assets/0cae9d22-f20c-473b-80c8-c8a9a5dd31cc">
 
-### Register File Read
-<img width="960" alt="Screenshot 2024-08-21 111643" src="https://github.com/user-attachments/assets/7ffff4cc-d5f7-4079-90a3-b6c6e2913707">
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/c0f42897-4e34-49d6-9ecd-aec14a06c0c2">
+### 3. Register File Read
 
-### Branch Instruction
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/c0f42897-4e34-49d6-9ecd-aec14a06c0c2">
+<img width="960" alt="Screenshot 2024-08-21 111643" src="https://github.com/user-attachments/assets/7ffff4cc-d5f7-4079-90a3-b6c6e2913707">
+
+### 4. Branch Instruction
 <img width="960" alt="Screenshot 2024-08-21 112334" src="https://github.com/user-attachments/assets/160e4e8c-94c4-44c7-8640-c872ff25ed01">
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/7bdd31f5-c8e3-49c5-8ac3-531555c9b0bc">
 <img width="960" alt="Screenshot 2024-08-21 194140" src="https://github.com/user-attachments/assets/a446e7da-cd4d-4d58-b509-e6b71a897486">
