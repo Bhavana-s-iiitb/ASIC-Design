@@ -65,6 +65,7 @@ Iterative addition of numbers from 1 to 9:
 
 <img width="874" alt="Screenshot 2024-08-21 192406" src="https://github.com/user-attachments/assets/ece17b58-9a04-4d42-9274-c1a9e6213e72">
 <img width="857" alt="Screenshot 2024-08-21 192420" src="https://github.com/user-attachments/assets/022fe8f8-6e2c-420d-a0a6-092c7dca3488">
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/d80da022-4f40-496b-815c-cc2fb5cef3d9">
 
 <br>
 
