@@ -265,29 +265,40 @@ sudo chmod 666 /var/run/docker.sock
 cd ~
 pip3 install pyyaml click sandpiper-saas
 ```
-### clone the repository
+### Clone the repository
 ``` git clone https://github.com/manili/VSDBabySoC.git ```
 ### Convert .tlv file into .v file
 ```
 sandpiper-saas -i home/vsduser/VSDBabySoC/src/module/bhavana_rvmyth.tlv -o bhavana_rvmyth.v --bestsv --noline -p verilog --outdir home/vsduser/VSDBabySoC/src/module/
 ```
 ![WhatsApp Image 2024-08-27 at 12 09 46 AM (2)](https://github.com/user-attachments/assets/52b87057-580f-489a-b11d-c3e7d479c2f4)
+<br>
 
 ``` make pre_synth_sim ```
+
+<br>
+
 ![WhatsApp Image 2024-08-27 at 12 09 46 AM (3)](https://github.com/user-attachments/assets/d25ff81a-598a-4a0d-8936-223fc4261c6b)
 
 
-### Compile and Simulation
+### Compilation and Simulation
 ```
 iverilog -o output/pre_synth_sim.out -DPRE_SYNTH_SIM home/vsduser/VSDBabySoC/src/module/testbench.v -I src/include -I home/vsduser/VSDBabySoCsrc/module
 cd output
 ./pre_synth_sim.out
  ```
+
+<br>
+
 ![WhatsApp Image 2024-08-27 at 12 09 47 AM](https://github.com/user-attachments/assets/b9d3bcdd-2f6b-4dfd-852b-7b599df9b810)
 
 ### To open waveform using gtkwave
 ``` gtkwave pre_synth_sim.out ```
+
+<br>
+
 ![WhatsApp Image 2024-08-27 at 12 09 48 AM](https://github.com/user-attachments/assets/2319c9cd-5b55-400d-9890-1ad3f4f71a0d)
+
 <br>
 
 Comparision of waveforms with makerchip results:
