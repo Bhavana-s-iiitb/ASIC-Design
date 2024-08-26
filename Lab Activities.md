@@ -260,13 +260,17 @@ int main()
 # 7 Converting TL-Verilog to verilog and simulation
 ### Installation of packages
 ```
-sudo apt install make python python3 python3-pip git iverilog gtkwave docker.io
-sudo chmod 666 /var/run/docker.sock
-cd ~
+sudo apt install make python python3 python3-pip git iverilog gtkwave
+sudo apt-get install python3-venv
+python3 -m venv .venv
+source ~/.venv/bin/activate
 pip3 install pyyaml click sandpiper-saas
 ```
 ### Clone the repository
-``` git clone https://github.com/manili/VSDBabySoC.git ```
+```
+git clone https://github.com/manili/VSDBabySoC.git
+cd VSDBabySoC
+```
 ### Convert .tlv file into .v file
 ```
 sandpiper-saas -i home/vsduser/VSDBabySoC/src/module/bhavana_rvmyth.tlv -o bhavana_rvmyth.v --bestsv --noline -p verilog --outdir home/vsduser/VSDBabySoC/src/module/
@@ -284,6 +288,7 @@ sandpiper-saas -i home/vsduser/VSDBabySoC/src/module/bhavana_rvmyth.tlv -o bhava
 ### Compilation and Simulation
 ```
 iverilog -o output/pre_synth_sim.out -DPRE_SYNTH_SIM home/vsduser/VSDBabySoC/src/module/testbench.v -I src/include -I home/vsduser/VSDBabySoCsrc/module
+
 cd output
 ./pre_synth_sim.out
  ```
