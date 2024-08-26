@@ -5,6 +5,7 @@
   - [ Instruction types in RISC-V ](#3-instruction-types-in-risc-v)
   - [ Functional Simulation ](#4-functional-simulation)
   - [ Application program compilation](#5-compilation-of-an-application-program-with-gcc-and-risc-v-gcc)
+  - [ Converting TL-Verilog into Verilog and Simulation](#7-converting-tl-verilog-to-verilog-and-simulation)
 
 # 1 Executing a simple c program on virtual machine using gcc
 ### Step 1:Creating a .c file using leafpad editor 
@@ -256,7 +257,7 @@ int main()
 ### Compilation using gcc and risc-v gcc:
 ![14 3](https://github.com/user-attachments/assets/e95150b2-8caf-4662-a088-885078c9b784)
 
-# Converting TL-Verilog to verilog and simulating
+# 7 Converting TL-Verilog to verilog and simulation
 ### Installation of packages
 ```
 sudo apt install make python python3 python3-pip git iverilog gtkwave docker.io
@@ -287,7 +288,11 @@ cd output
 ### To open waveform using gtkwave
 ``` gtkwave pre_synth_sim.out ```
 ![WhatsApp Image 2024-08-27 at 12 09 48 AM](https://github.com/user-attachments/assets/2319c9cd-5b55-400d-9890-1ad3f4f71a0d)
-Comparision of waveforms using makerchip results:
+<br>
+
+Comparision of waveforms with makerchip results:
+<br>
+
 <img width="960" alt="Screenshot 2024-08-22 115754" src="https://github.com/user-attachments/assets/3bd803ab-63c7-4b24-b04c-5f25b72f7dc5">
 <img width="960" alt="Screenshot 2024-08-21 194140" src="https://github.com/user-attachments/assets/8f3dd11b-8ccd-4e2d-93bf-33255009ca92">
 <img width="877" alt="Screenshot 2024-08-21 192246" src="https://github.com/user-attachments/assets/19a67575-aa76-495c-871b-700bf32aac48">
