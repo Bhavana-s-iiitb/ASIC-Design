@@ -256,3 +256,40 @@ int main()
 ### Compilation using gcc and risc-v gcc:
 ![14 3](https://github.com/user-attachments/assets/e95150b2-8caf-4662-a088-885078c9b784)
 
+# Converting TL-Verilog to verilog and simulating
+### Installation of packages
+```
+sudo apt install make python python3 python3-pip git iverilog gtkwave docker.io
+sudo chmod 666 /var/run/docker.sock
+cd ~
+pip3 install pyyaml click sandpiper-saas
+```
+### clone the repository
+``` git clone https://github.com/manili/VSDBabySoC.git ```
+### Convert .tlv file into .v file
+```
+sandpiper-saas -i home/vsduser/VSDBabySoC/src/module/bhavana_rvmyth.tlv -o bhavana_rvmyth.v --bestsv --noline -p verilog --outdir home/vsduser/VSDBabySoC/src/module/
+```
+![WhatsApp Image 2024-08-27 at 12 09 46 AM (2)](https://github.com/user-attachments/assets/52b87057-580f-489a-b11d-c3e7d479c2f4)
+
+``` make pre_synth_sim ```
+![WhatsApp Image 2024-08-27 at 12 09 46 AM (3)](https://github.com/user-attachments/assets/d25ff81a-598a-4a0d-8936-223fc4261c6b)
+
+
+### Compile and Simulation
+```
+iverilog -o output/pre_synth_sim.out -DPRE_SYNTH_SIM home/vsduser/VSDBabySoC/src/module/testbench.v -I src/include -I home/vsduser/VSDBabySoCsrc/module
+cd output
+./pre_synth_sim.out
+ ```
+![WhatsApp Image 2024-08-27 at 12 09 47 AM](https://github.com/user-attachments/assets/b9d3bcdd-2f6b-4dfd-852b-7b599df9b810)
+
+### To open waveform using gtkwave
+``` gtkwave pre_synth_sim.out ```
+![WhatsApp Image 2024-08-27 at 12 09 48 AM](https://github.com/user-attachments/assets/2319c9cd-5b55-400d-9890-1ad3f4f71a0d)
+Comparision of waveforms using makerchip results:
+<img width="960" alt="Screenshot 2024-08-22 115754" src="https://github.com/user-attachments/assets/3bd803ab-63c7-4b24-b04c-5f25b72f7dc5">
+<img width="960" alt="Screenshot 2024-08-21 194140" src="https://github.com/user-attachments/assets/8f3dd11b-8ccd-4e2d-93bf-33255009ca92">
+<img width="877" alt="Screenshot 2024-08-21 192246" src="https://github.com/user-attachments/assets/19a67575-aa76-495c-871b-700bf32aac48">
+
+
