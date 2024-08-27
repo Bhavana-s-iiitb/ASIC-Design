@@ -305,6 +305,11 @@ cd output
 ![WhatsApp Image 2024-08-27 at 12 09 48 AM](https://github.com/user-attachments/assets/2319c9cd-5b55-400d-9890-1ad3f4f71a0d)
 
 <br>
+Output in binary:
+
+![WhatsApp Image 2024-08-27 at 7 00 23 AM](https://github.com/user-attachments/assets/b9efa767-cf1e-41c9-ab0c-881d0b2f6290)
+
+<br>
 
 Comparision of waveforms with makerchip results:
 <br>
