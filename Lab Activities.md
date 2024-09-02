@@ -318,4 +318,29 @@ Comparision of waveforms with makerchip results:
 <img width="960" alt="Screenshot 2024-08-21 194140" src="https://github.com/user-attachments/assets/8f3dd11b-8ccd-4e2d-93bf-33255009ca92">
 <img width="877" alt="Screenshot 2024-08-21 192246" src="https://github.com/user-attachments/assets/19a67575-aa76-495c-871b-700bf32aac48">
 
+# 8 VSDBabySoC
+VSDBabySoC is a small RISCV-based System on a Chip (SoC). It contains one RVMYTH microprocessor, a PLL generator and a DAC to communicate with analog devices.
+### PLL
+Phase Locked Loop is an anolog circuit used for frequency synthesis. The function of the PLL is to compare the distributed clock to the incoming reference clock, and vary the phase and frequency of its output until the reference and feedback clocks are phase and frequency matched.
+
+### DAC
+Digital to Analog Converter converts input digital signal into an analog signal. DACs are used in many applications, and can be integrated into system on a chip (SOC) designs. A DAC converts a binary input number into an analog output. A binary number on the input causes a corresponding voltage on the output. 
+
+### Commands:
+
+Clone this git:
+` git clone https://github.com/Subhasis-Sahu/BabySoC_Simulation.git `
+```
+cd BabySoC_Simulation
+iverilog -o ./pre_synth_sim.out -DPRE_SYNTH_SIM src/module/testbench.v -I src/include -I src/module/
+./pre_synth_sim.out
+```
+![VirtualBox_bhavana_02_09_2024_18_05_38_1](https://github.com/user-attachments/assets/6366c29f-f480-43b6-9b4d-aa0923163c26)
+
+To open gtkwave:
+```
+gtkwave pre_synth_sim.vcd
+```
+![VirtualBox_bhavana_02_09_2024_18_04_46_1](https://github.com/user-attachments/assets/0d4bab6d-df7e-4b4c-bef5-d56d053f0136)
+
 
