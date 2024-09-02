@@ -6,7 +6,7 @@
   - [ Functional Simulation ](#4-functional-simulation)
   - [ Application program compilation](#5-compilation-of-an-application-program-with-gcc-and-risc-v-gcc)
   - [ Converting TL-Verilog into Verilog and Simulation](#7-converting-tl-verilog-to-verilog-and-simulation)
-  - [_VSDBabySoC](#8-vsdbabysoc)
+  - [ VSDBabySoC](#8-vsdbabysoc)
 
 # 1 Executing a simple c program on virtual machine using gcc
 ### Step 1:Creating a .c file using leafpad editor 
