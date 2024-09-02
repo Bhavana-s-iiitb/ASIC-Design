@@ -6,6 +6,7 @@
   - [ Functional Simulation ](#4-functional-simulation)
   - [ Application program compilation](#5-compilation-of-an-application-program-with-gcc-and-risc-v-gcc)
   - [ Converting TL-Verilog into Verilog and Simulation](#7-converting-tl-verilog-to-verilog-and-simulation)
+  - [_VSDBabySoC](#8-vsdbabysoc)
 
 # 1 Executing a simple c program on virtual machine using gcc
 ### Step 1:Creating a .c file using leafpad editor 
@@ -331,6 +332,7 @@ Digital to Analog Converter converts input digital signal into an analog signal.
 Clone this git:
 ` git clone https://github.com/Subhasis-Sahu/BabySoC_Simulation.git `
 ```
+And run these commands
 cd BabySoC_Simulation
 iverilog -o ./pre_synth_sim.out -DPRE_SYNTH_SIM src/module/testbench.v -I src/include -I src/module/
 ./pre_synth_sim.out
