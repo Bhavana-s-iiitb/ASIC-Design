@@ -338,7 +338,7 @@ cd BabySoC_Simulation
 iverilog -o ./pre_synth_sim.out -DPRE_SYNTH_SIM src/module/testbench.v -I src/include -I src/module/
 ./pre_synth_sim.out
 ```
-![VirtualBox_bhavana_02_09_2024_18_05_38_1](https://github.com/user-attachments/assets/6366c29f-f480-43b6-9b4d-aa0923163c26)
+![image](https://github.com/user-attachments/assets/14d4303e-6ad5-4c26-858d-c42d251d6a9b)
 
 To open gtkwave:
 ```
