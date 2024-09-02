@@ -331,8 +331,9 @@ Digital to Analog Converter converts input digital signal into an analog signal.
 
 Clone this git:
 ` git clone https://github.com/Subhasis-Sahu/BabySoC_Simulation.git `
-```
+
 And run these commands
+```
 cd BabySoC_Simulation
 iverilog -o ./pre_synth_sim.out -DPRE_SYNTH_SIM src/module/testbench.v -I src/include -I src/module/
 ./pre_synth_sim.out
