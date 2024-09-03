@@ -346,4 +346,5 @@ gtkwave pre_synth_sim.vcd
 ```
 ![VirtualBox_bhavana_02_09_2024_18_04_46_1](https://github.com/user-attachments/assets/0d4bab6d-df7e-4b4c-bef5-d56d053f0136)
 
+![VirtualBox_bhavana_03_09_2024_02_57_57_1](https://github.com/user-attachments/assets/45f71ade-24f6-4577-8098-1f6b430f2dd6)
 
