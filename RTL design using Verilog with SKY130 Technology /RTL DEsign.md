@@ -314,3 +314,9 @@ Sequential logic optimization involves improving the efficiency, speed, and reso
 ![image](https://github.com/user-attachments/assets/92dad3ae-79c8-46e4-b4aa-35320d1a3ed7)
 
 ## Unused Output Optimization
+Logic which is not used may not be present in the design. This part of the logic which is not used can be ignored.
+
+### counter_opt
+There is only one D flip flop inferred instead of 3 after optimization. The unused bits are completely optimized as the output is not affected by these two inputs.
+
+![image](https://github.com/user-attachments/assets/04792016-e6ef-4a40-b39f-f206f9f3e7a8)
