@@ -367,3 +367,17 @@ Netlist is logically same as RTL code and the inputs and outputs are same. There
 
 
 ![image](https://github.com/user-attachments/assets/0b5a8fe3-9df2-45f4-86c5-e0b2ea2e677f)
+
+### Missing sensitivity Mis-Match Example
+![image](https://github.com/user-attachments/assets/8462fb60-4af8-4844-9b73-df27b2f09660)
+
+Netlist of bad_mux
+Simulation results:
+
+![image](https://github.com/user-attachments/assets/7ab6cf84-bc9f-46df-9d7e-9cdc9fb334b1)
+
+Synthesis results:
+![image](https://github.com/user-attachments/assets/86a2d416-1e5d-4dfa-b559-a18e01a2dd6a)
+
+
+
