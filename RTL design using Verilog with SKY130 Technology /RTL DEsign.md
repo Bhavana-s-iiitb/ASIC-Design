@@ -35,7 +35,7 @@ Use the following commands to install yosys, iverilog and gtkwave
 iverilog based simualtion flow:
 The iverilog simualator takes the design file and the testbench as input and generates a VCD(Value chae dump format) file. The simulaton output can be viewed using gtkwave analyser.
 ![image](https://github.com/user-attachments/assets/8fc95a48-dcf5-4ed8-8ce0-870e9b37f659)
-### VSD Flow
+## VSD Flow
 
 ```
 mkdie VLSI
@@ -50,3 +50,16 @@ iverilog good_mux.v tb_good_mux.v
 gtkwave tb_good_mux.vcd
 ```
 ![image](https://github.com/user-attachments/assets/4444f832-84f0-493c-bf5c-3b1334f5656e)
+To see the file structure :
+` gvim tb_good_mux.v -o good_mux.v `
+![image](https://github.com/user-attachments/assets/a7e20d02-42cc-441d-9c7a-742fa6bcc0a6)
+
+## Yosys
+Synthesizer is the tool for converting RTL design to netlist and YOSYS is the tool we are using as for synthesis.
+Netlist is the representation of the design in the form of cells present in the design.
+
+![image](https://github.com/user-attachments/assets/900a9cb6-6b9d-4653-aa40-4184c3f67907)
+
+To verify the synthesis output: 
+Give the netlist as input the iverilog simulator along with the same testbench and view the output VCD file using gtkwave analyser. This output should be same as the output obtained from RTL design file.
+![image](https://github.com/user-attachments/assets/7e5b85e5-f6d8-4350-aa99-2f1ebb639382)
