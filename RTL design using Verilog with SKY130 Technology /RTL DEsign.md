@@ -167,6 +167,25 @@ Module leve synthesis is preferred when
 ## Flops
 Flops are needed to avoid propogation of gliches.
 
-### Types of coding Flops:
+### Ways of coding Flops:
 1. Asynchronous Flops: There is no clock dependency. Asynchronous flip-flops can change their output state immediately in response to input changes. They do not have setup or hold time requirements related to a clock, leading to potential timing issues. They are often used in situations where immediate response to input changes is necessary, such as in certain control circuits.
+<br>
+
+![image](https://github.com/user-attachments/assets/d4bf4898-ac6d-4726-933b-3243a5ef8199)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/9b842415-83ca-4daa-a846-244aad4d8613)
+
+<br>
+   
 2. Synchronous Flops: Synchronous with clock signal. The output state only at specific times determined by a clock signal (e.g., on the rising or falling edge of the clock). Inputs must be stable for a certain period before and after the clock edge (setup and hold times).
+
+<br>
+
+![image](https://github.com/user-attachments/assets/81e6a1ec-e6c6-4cf3-94de-4a5d222e1ba7)
+
+<br>
+![image](https://github.com/user-attachments/assets/5d81e115-6416-4f04-906c-20a9a2b83b41)
+
+<br>
