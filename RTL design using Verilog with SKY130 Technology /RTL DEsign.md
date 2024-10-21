@@ -62,4 +62,26 @@ Netlist is the representation of the design in the form of cells present in the 
 
 To verify the synthesis output: 
 Give the netlist as input the iverilog simulator along with the same testbench and view the output VCD file using gtkwave analyser. This output should be same as the output obtained from RTL design file.
+The set of primary inputs and outputs remain same for both RTL design and netlist simulation. Hence the same testbench is used in both cases.
 ![image](https://github.com/user-attachments/assets/7e5b85e5-f6d8-4350-aa99-2f1ebb639382)
+
+## Logic Synthesis
+### RTL Design 
+It is the behavioural representaion of the requiered specification.
+RTL to gate level transition is called synthesis.
+the design is converted into gates and connections are made.
+Netlist is the output of the synthesis.
+### .lib:
+It is the collection of logic modules.
+It includes basic logic gates like AND, OR, NOT, etc.
+It also includes different flavours of same gate, like 2 input AND gate, 3 input AND gate.
+## Labs using Yosys
+Command to invoke yosys is ` yosys `. This will open up a yosys prompt.
+List of Commands in yosys:
+- To invoke Yosys : yosys
+- To read librery : read_liberty -lib ../path
+- To read design : read_verilog good_mux.v
+- To synthesis : synth top good_mux.v
+- To generate netlist : abc -liberty ../path
+- To see realized logic : show
+- To write netlist : write_verilog -noattr good_mux_netlist.v  !gvim good_mux_netlist.v
