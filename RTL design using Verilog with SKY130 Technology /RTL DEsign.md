@@ -240,6 +240,6 @@ Techniques for combinational logic optimization:
 ## Sequential Logic Optimization
 Techniques:
 - Basic: Sequential constant propogation
-- Advanced: 1. State Optimization
+- Advanced: 1. State Optimization: Optimization of unused states.
            2. Retiming
-           3. Sequential logic cloning (Floor Plan Aware Synthesis)
+           3. Sequential logic cloning (Floor Plan Aware Synthesis): 
