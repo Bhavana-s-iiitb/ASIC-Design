@@ -76,17 +76,24 @@ It is the collection of logic modules.
 It includes basic logic gates like AND, OR, NOT, etc.
 It also includes different flavours of same gate, like 2 input AND gate, 3 input AND gate.
 ## Labs using Yosys
-Command to invoke yosys is ` yosys `. This will open up a yosys prompt.
+
 List of Commands in yosys:
 <br>
 
 | Task  | Command |
 | :-----:	| :-----: | 
 | To invoke Yosys | yosys |
-| To read librery | read_liberty -lib ../path
+| To read librery | read_liberty -lib /home/bhavana/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib |
 | To read design | read_verilog good_mux.v |
 | To synthesis | synth top good_mux.v |
 | To generate netlist | abc -liberty ../path |
 | To see realized logic | show |
 | To write netlist | write_verilog -noattr good_mux_netlist.v <br> !gvim good_mux_netlist.v |
 
+
+![image](https://github.com/user-attachments/assets/3fa82c63-7513-43fe-90dd-97a184d9cf14)
+
+![image](https://github.com/user-attachments/assets/aa65991f-490d-44d4-8e6c-150e1de454ed)
+
+Writing netlist:
+![image](https://github.com/user-attachments/assets/338a9ea1-d384-4318-b16f-24276ccd382d)
