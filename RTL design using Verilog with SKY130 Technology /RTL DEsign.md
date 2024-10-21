@@ -90,10 +90,39 @@ List of Commands in yosys:
 | To see realized logic | show |
 | To write netlist | write_verilog -noattr good_mux_netlist.v <br> !gvim good_mux_netlist.v |
 
+<br>
 
 ![image](https://github.com/user-attachments/assets/3fa82c63-7513-43fe-90dd-97a184d9cf14)
 
+<br>
+
 ![image](https://github.com/user-attachments/assets/aa65991f-490d-44d4-8e6c-150e1de454ed)
 
+
 Writing netlist:
+<br> 
 ![image](https://github.com/user-attachments/assets/338a9ea1-d384-4318-b16f-24276ccd382d)
+
+# Day 2
+
+Open lib File
+` gvim /home/bhavana/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib `
+
+<br>
+
+Details in the lib file:
+<br>
+
+![image](https://github.com/user-attachments/assets/2873a7ba-f6e3-4452-bb89-6d7e55e6f9a4)
+
+<br>
+Different features of each cell:
+<br>
+![image](https://github.com/user-attachments/assets/cffca201-60db-410a-8e63-61337cf7c3c5)
+<br>
+Comparing details of same cell but different size:
+<br>
+Smaller cell has smaller area but high delay compared to larger cell which are faster and consume more area.
+![image](https://github.com/user-attachments/assets/c0ecaf2a-0bae-4b42-92c8-73935782bbb6)
+
+<br>
