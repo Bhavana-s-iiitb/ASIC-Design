@@ -289,4 +289,28 @@ Sequential logic optimization involves improving the efficiency, speed, and reso
 
 ### dff_const3
 
+![image](https://github.com/user-attachments/assets/a96af469-4b16-4feb-be12-3d9f321fa09f)
+
+
 ![image](https://github.com/user-attachments/assets/975fab58-b64c-458b-9f58-54eb80559d75)
+
+### dff_const4
+
+![image](https://github.com/user-attachments/assets/3f97c0f8-6c28-4c7f-83d7-04ff68d7e5f5)
+
+![image](https://github.com/user-attachments/assets/cd1b7967-f8e5-4229-b270-e298a58daaed)
+
+
+![image](https://github.com/user-attachments/assets/282f33f8-e340-4bd2-bafa-470d0586c2b9)
+
+
+### dff_const5
+
+![image](https://github.com/user-attachments/assets/c4feb30a-8cbf-4caa-af8a-7ebfe35f3c50)
+
+![image](https://github.com/user-attachments/assets/ddb01c4d-dd8d-4f5e-8187-43158a7f9051)
+
+
+![image](https://github.com/user-attachments/assets/92dad3ae-79c8-46e4-b4aa-35320d1a3ed7)
+
+## Unused Output Optimization
