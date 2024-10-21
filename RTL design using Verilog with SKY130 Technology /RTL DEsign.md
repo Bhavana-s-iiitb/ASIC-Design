@@ -304,6 +304,8 @@ Sequential logic optimization involves improving the efficiency, speed, and reso
 ![image](https://github.com/user-attachments/assets/282f33f8-e340-4bd2-bafa-470d0586c2b9)
 
 
+![image](https://github.com/user-attachments/assets/44e1ba8d-608c-4572-a8f5-04a84ac5d317)
+
 ### dff_const5
 
 ![image](https://github.com/user-attachments/assets/c4feb30a-8cbf-4caa-af8a-7ebfe35f3c50)
@@ -320,3 +322,48 @@ Logic which is not used may not be present in the design. This part of the logic
 There is only one D flip flop inferred instead of 3 after optimization. The unused bits are completely optimized as the output is not affected by these two inputs.
 
 ![image](https://github.com/user-attachments/assets/04792016-e6ef-4a40-b39f-f206f9f3e7a8)
+
+## Sequential optimizations for unused outputs
+After editing the code:
+<br>
+
+![image](https://github.com/user-attachments/assets/ed7985fc-790e-4a88-b4b1-38a554ebdc5a)
+
+<br>
+
+![image](https://github.com/user-attachments/assets/02bf58ee-ef6a-49b6-acf6-e150b1bc0548)
+
+
+# Day 4
+## Gate level Simulation
+Running the test bench with netlist as design under test.
+Netlist is logically same as RTL code and the inputs and outputs are same. Therefore same test bench will align with the design.
+
+### Why GLS
+- Verify the logical correctness of design after synthesis
+- Ensuring the timing of the design is met. For this GLS needs to be run with delay annotation.
+
+### GLS using iverilog
+![image](https://github.com/user-attachments/assets/b1bb864f-2034-40cd-abe1-a3f74573dcd1)
+
+## Synthesis Simulation Mismatch
+1. Missing sensitivity List: The simulator works on "activity of inputs". Output changes when the input changes. this is called sensitivity list. If the sensitivity list doesnot contain the required inputs, then there is a mismatch between synthesis and simulation and the desired output may not be obtained.
+
+2. Blocking Vs Non_Blocking Assignments:
+   Inside the always block, " = " is the Blocking assignment and " <= " is non_blocking assignment. Blocking statement excecutes the statements in the order it is written whereas the non_blocking statement executes all the RHS when the always block is entered and assigns to LHS which is the parallel evaluation.
+
+   <br>
+   Inside an always block of a sequential logic, non_blocking assignment should be used.
+   
+
+4. Non Standard Verilog Coding:
+
+## GLS Labs
+### ternary_operator_mux
+
+![image](https://github.com/user-attachments/assets/543ca221-e2f9-43f7-b633-f3ea159b4433)
+
+![image](https://github.com/user-attachments/assets/09bbd6dc-fd17-426f-ab5c-4a124c5d69ce)
+
+
+![image](https://github.com/user-attachments/assets/0b5a8fe3-9df2-45f4-86c5-e0b2ea2e677f)
