@@ -221,3 +221,25 @@ Netlist:
 
 ![image](https://github.com/user-attachments/assets/fd4cf71b-7ac5-4456-a1f5-d082f3bdfb5a)
 
+
+# Day 3
+
+## Combinational Logic Optimisation
+Optimizing is squeezing the logic to get the most optimised design. Optimization results in area and power savings.
+Techniques for combinational logic optimization:
+- Constant Propogation - Direct Optimization
+  <br>
+
+  ![image](https://github.com/user-attachments/assets/fea7acb9-254e-491d-9e91-52a6072b7e62)
+
+- Boolean Logic Optimization
+  <br>
+
+  ![image](https://github.com/user-attachments/assets/a434ad43-8b37-45f8-aa88-6059fc837bf9)
+
+## Sequential Logic Optimization
+Techniques:
+- Basic: Sequential constant propogation
+- Advanced: 1. State Optimization
+           2. Retiming
+           3. Sequential logic cloning (Floor Plan Aware Synthesis)
