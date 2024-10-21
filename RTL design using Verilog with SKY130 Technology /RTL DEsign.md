@@ -379,5 +379,9 @@ Simulation results:
 Synthesis results:
 ![image](https://github.com/user-attachments/assets/86a2d416-1e5d-4dfa-b559-a18e01a2dd6a)
 
+### Blocking mis match example
 
+![image](https://github.com/user-attachments/assets/94bf93a9-76e9-42f5-b62c-a141ebf3ebec)
+
+![image](https://github.com/user-attachments/assets/96ef1cad-3c82-4d8d-97ba-a9f1ca0bea0f)
 
