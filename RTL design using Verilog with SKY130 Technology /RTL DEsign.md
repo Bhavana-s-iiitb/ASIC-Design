@@ -1,4 +1,4 @@
-# Installation of Required tools
+![image](https://github.com/user-attachments/assets/3a21c561-748b-47cf-b49f-2cf1dd52af53)# Installation of Required tools
 Use the following commands to install yosys, iverilog and gtkwave
 
 ```
@@ -117,12 +117,56 @@ Details in the lib file:
 
 <br>
 Different features of each cell:
+
 <br>
+
 ![image](https://github.com/user-attachments/assets/cffca201-60db-410a-8e63-61337cf7c3c5)
+
 <br>
+
 Comparing details of same cell but different size:
+
 <br>
+
 Smaller cell has smaller area but high delay compared to larger cell which are faster and consume more area.
 ![image](https://github.com/user-attachments/assets/c0ecaf2a-0bae-4b42-92c8-73935782bbb6)
 
 <br>
+
+## Heirarchical and Flat Synthesis
+
+### Heirarchical Design
+
+1. Read the multiple_modules.v file
+2. ` synth -top multiple_modules `
+3. ` show multiple_modules `
+![image](https://github.com/user-attachments/assets/0ca6fb1f-8790-4362-8a80-ff47180bfafd)
+
+![image](https://github.com/user-attachments/assets/0334dee4-cecb-4357-9644-f2910afc2cc6)
+
+<br> 
+Here it can be seen that heirarchies are reserved. The design containes two submodules.
+![image](https://github.com/user-attachments/assets/47372e48-f239-442d-af6a-1f05ebc29387)
+
+### Flat Synthesis
+` flatten ` is the command to flat out the netlist.
+
+### To synthesis a submodule in a multiple_modules file
+```
+read_verilog multiple_modules.v
+synth -top sub_module_1
+abc -liberty ../path_of_.lib
+show
+```
+![image](https://github.com/user-attachments/assets/a83643e6-4fd2-4bf0-9d9e-6c6e676e113c)
+<br>
+Module leve synthesis is preferred when
+- we need multiple instances of same module.
+- Divide and Conquer - need for synthesising part by part.
+
+## Flops
+Flops are needed to avoid propogation of gliches.
+
+### Types of coding Flops:
+1. Asynchronous Flops: There is no clock dependency. Asynchronous flip-flops can change their output state immediately in response to input changes. They do not have setup or hold time requirements related to a clock, leading to potential timing issues. They are often used in situations where immediate response to input changes is necessary, such as in certain control circuits.
+2. Synchronous Flops: Synchronous with clock signal. The output state only at specific times determined by a clock signal (e.g., on the rising or falling edge of the clock). Inputs must be stable for a certain period before and after the clock edge (setup and hold times).
