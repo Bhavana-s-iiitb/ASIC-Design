@@ -186,6 +186,38 @@ Flops are needed to avoid propogation of gliches.
 ![image](https://github.com/user-attachments/assets/81e6a1ec-e6c6-4cf3-94de-4a5d222e1ba7)
 
 <br>
+
 ![image](https://github.com/user-attachments/assets/5d81e115-6416-4f04-906c-20a9a2b83b41)
 
 <br>
+
+## Synthesis of DFF using yosys
+Add this command to specify the tool to pick the dff from the
+` dfflibmap -liberty ../path-.lib `
+<br>
+
+![image](https://github.com/user-attachments/assets/547f48d3-5111-45e5-96ee-6d5442c97b4e)
+
+<br>
+
+![Screenshot from 2024-10-22 00-55-29](https://github.com/user-attachments/assets/9c2c28d4-3b1c-4974-86a7-950ca7aaa499)
+
+<br>
+
+## Optimization 
+
+![image](https://github.com/user-attachments/assets/df657491-b34b-481b-b389-b66c4fc542d9)
+
+
+![image](https://github.com/user-attachments/assets/3e391a42-cb69-4869-9655-ae9f208fc7a6)
+
+Mult8
+<br>
+
+![image](https://github.com/user-attachments/assets/e01b7a6c-4f62-4162-b5a9-b555f0f862f6)
+
+Netlist:
+<br>
+
+![image](https://github.com/user-attachments/assets/fd4cf71b-7ac5-4456-a1f5-d082f3bdfb5a)
+
