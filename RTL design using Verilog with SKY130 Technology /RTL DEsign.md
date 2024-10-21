@@ -78,10 +78,15 @@ It also includes different flavours of same gate, like 2 input AND gate, 3 input
 ## Labs using Yosys
 Command to invoke yosys is ` yosys `. This will open up a yosys prompt.
 List of Commands in yosys:
-- To invoke Yosys : yosys
-- To read librery : read_liberty -lib ../path
-- To read design : read_verilog good_mux.v
-- To synthesis : synth top good_mux.v
-- To generate netlist : abc -liberty ../path
-- To see realized logic : show
-- To write netlist : write_verilog -noattr good_mux_netlist.v  !gvim good_mux_netlist.v
+<br>
+
+| Task  | Command |
+| :-----:	| :-----: | 
+| To invoke Yosys | yosys |
+| To read librery | read_liberty -lib ../path
+| To read design | read_verilog good_mux.v |
+| To synthesis | synth top good_mux.v |
+| To generate netlist | abc -liberty ../path |
+| To see realized logic | show |
+| To write netlist | write_verilog -noattr good_mux_netlist.v <br> !gvim good_mux_netlist.v |
+
