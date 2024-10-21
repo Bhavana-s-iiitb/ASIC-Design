@@ -1,4 +1,4 @@
-### Installation of Required tools
+# Installation of Required tools
 Use the following commands to install yosys, iverilog and gtkwave
 
 ```
@@ -15,10 +15,10 @@ Use the following commands to install yosys, iverilog and gtkwave
 ```
 
 ![Screenshot from 2024-10-21 19-29-07](https://github.com/user-attachments/assets/8360cb64-327b-4c0d-a6fe-efb4f022a1f7)
- ## To install iverilog:
+ ### To install iverilog:
  ` sudo apt-get install iverilog `
 
- ## To install gtkwave:
+ ### To install gtkwave:
     ``` 
     sudo apt update
     sudo apt install gtkwave 
