@@ -192,7 +192,7 @@ Flops are needed to avoid propogation of gliches.
 <br>
 
 ## Synthesis of DFF using yosys
-Add this command to specify the tool to pick the dff from the
+Add this command to specify the tool what library to pick.
 ` dfflibmap -liberty ../path-.lib `
 <br>
 
@@ -240,6 +240,53 @@ Techniques for combinational logic optimization:
 ## Sequential Logic Optimization
 Techniques:
 - Basic: Sequential constant propogation
+  This optimization focuses on identifying and propagating constant values through the logic to simplify the circuit and improve performance. 
 - Advanced: 1. State Optimization: Optimization of unused states.
            2. Retiming
            3. Sequential logic cloning (Floor Plan Aware Synthesis): 
+Sequential logic optimization involves improving the efficiency, speed, and resource usage of sequential circuits (like flip-flops, registers, and state machines)
+
+## Optimization Labs
+### opt_check: And realization
+
+![image](https://github.com/user-attachments/assets/f8394eac-0269-4f34-aca6-da1716f899f0)
+
+### opt_chech2: OR realization 
+
+![image](https://github.com/user-attachments/assets/b45e7621-8d79-4668-b256-ef80d1285d80)
+
+### opt_check3: 3 input AND gate
+
+![image](https://github.com/user-attachments/assets/9fba4f61-b576-40f2-a3b4-f04eb55df8a7)
+
+### opt_check4: 2 input XNOR gate
+
+![image](https://github.com/user-attachments/assets/5453a759-ee59-49ae-b8a9-0ad290c8db1b)
+
+### multiple_module_opt: 
+
+![image](https://github.com/user-attachments/assets/d9e7dc7d-a57a-4999-9812-17b4365577b1)
+
+### multiple_module_opt2
+
+![image](https://github.com/user-attachments/assets/22640e00-2270-4b00-8195-474baf25605f)
+
+## Sequential Optimization lab
+
+### dff_const1
+
+![image](https://github.com/user-attachments/assets/7550cef5-3d1f-4e9f-9e67-f79c29613538)
+
+
+![image](https://github.com/user-attachments/assets/f6793be7-9053-425b-9838-fe042a0702b9)
+
+### dff_const2
+
+![image](https://github.com/user-attachments/assets/c0ef930e-ca64-455a-b0ae-9a2e202457b4)
+
+
+![image](https://github.com/user-attachments/assets/291f57ea-3a27-4446-befd-fd794046bed5)
+
+### dff_const3
+
+![image](https://github.com/user-attachments/assets/975fab58-b64c-458b-9f58-54eb80559d75)
