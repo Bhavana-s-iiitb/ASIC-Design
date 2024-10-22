@@ -114,6 +114,7 @@ Writing netlist:
 # Day 2
 
 Open lib File
+<br> 
 ` gvim /home/bhavana/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib `
 
 <br>
@@ -154,6 +155,8 @@ Smaller cell has smaller area but high delay compared to larger cell which are f
 
 <br> 
 Here it can be seen that heirarchies are reserved. The design containes two submodules.
+<br>
+
 ![image](https://github.com/user-attachments/assets/47372e48-f239-442d-af6a-1f05ebc29387)
 
 ### Flat Synthesis
@@ -168,7 +171,7 @@ show
 ```
 ![image](https://github.com/user-attachments/assets/a83643e6-4fd2-4bf0-9d9e-6c6e676e113c)
 <br>
-Module leve synthesis is preferred when
+Module level synthesis is preferred when
 - we need multiple instances of same module.
 - Divide and Conquer - need for synthesising part by part.
 
@@ -200,7 +203,7 @@ Flops are needed to avoid propogation of gliches.
 <br>
 
 ## Synthesis of DFF using yosys
-Add this command to specify the tool what library to pick.
+Add this command to instruct the tool what library to pick.
 ` dfflibmap -liberty ../path-.lib `
 <br>
 
@@ -212,14 +215,14 @@ Add this command to specify the tool what library to pick.
 
 <br>
 
-## Optimization 
+## Optimization of Logic
 
 ![image](https://github.com/user-attachments/assets/df657491-b34b-481b-b389-b66c4fc542d9)
 
 
 ![image](https://github.com/user-attachments/assets/3e391a42-cb69-4869-9655-ae9f208fc7a6)
 
-Mult8
+### Optimization of Mult8 design
 <br>
 
 ![image](https://github.com/user-attachments/assets/e01b7a6c-4f62-4162-b5a9-b555f0f862f6)
@@ -323,7 +326,7 @@ Sequential logic optimization involves improving the efficiency, speed, and reso
 
 ![image](https://github.com/user-attachments/assets/92dad3ae-79c8-46e4-b4aa-35320d1a3ed7)
 
-## Unused Output Optimization
+## Sequential optimizations for unused outputs
 Logic which is not used may not be present in the design. This part of the logic which is not used can be ignored.
 
 ### counter_opt
@@ -331,7 +334,7 @@ There is only one D flip flop inferred instead of 3 after optimization. The unus
 
 ![image](https://github.com/user-attachments/assets/04792016-e6ef-4a40-b39f-f206f9f3e7a8)
 
-## Sequential optimizations for unused outputs
+
 After editing the code:
 <br>
 
