@@ -100,7 +100,9 @@ List of Commands in yosys:
 
 Example 1: good_mux.v
 <br>
-read_liberty -lib /home/bhavana/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+```
+read_liberty -lib /home/bhavana/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
 read_verilog ../verilog_files/good_mux.v
 synth top good_mux
 abc -liberty ../path_to_.lib
