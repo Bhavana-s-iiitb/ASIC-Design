@@ -268,8 +268,11 @@ Techniques for combinational logic optimization:
 Techniques:
 - Basic: Sequential constant propogation
   This optimization focuses on identifying and propagating constant values through the logic to simplify the circuit and improve performance. 
-- Advanced: 1. State Optimization: Optimization of unused states.
-           2. Retiming
+- Advanced:
+  <br>
+  1. State Optimization: Optimization of unused states.
+ <br>
+           2. Retiming <br>
            3. Sequential logic cloning (Floor Plan Aware Synthesis): 
 Sequential logic optimization involves improving the efficiency, speed, and resource usage of sequential circuits (like flip-flops, registers, and state machines)
 
