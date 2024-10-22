@@ -28,7 +28,7 @@ Use the following commands to install yosys, iverilog and gtkwave
 ![Screenshot from 2024-10-21 19-31-10](https://github.com/user-attachments/assets/9e206e18-d0b1-46eb-bcae-824f434e2e46)
 
 # Day 1
-### Simulator:
+## Simulator:
 - Simulator is tool to verify the RTL design by using testbech. iverilog is one of the simulation tool.
 
 - Design is the actual verilog code which has the intended functionality to meet with the required specifications.
@@ -50,7 +50,7 @@ iverilog good_mux.v tb_good_mux.v
 ./a.out
 gtkwave tb_good_mux.vcd
 ```
-The iverilog simulator takes the RTL design file and test bench as input and gives th ,vcd files as output.
+The iverilog simulator takes the RTL design file and test bench as input and gives the vcd files as output.
 <br>
 
 ![image](https://github.com/user-attachments/assets/4444f832-84f0-493c-bf5c-3b1334f5656e)
@@ -68,21 +68,21 @@ Netlist is the representation of the design in the form of cells present in the 
 
 ![image](https://github.com/user-attachments/assets/900a9cb6-6b9d-4653-aa40-4184c3f67907)
 
-To verify the synthesis output: 
+To verify the synthesized output: 
 Give the netlist as input the iverilog simulator along with the same testbench and view the output VCD file using gtkwave analyser. This output should be same as the output obtained from RTL design file.
 The set of primary inputs and outputs remain same for both RTL design and netlist simulation. Hence the same testbench is used in both cases.
 ![image](https://github.com/user-attachments/assets/7e5b85e5-f6d8-4350-aa99-2f1ebb639382)
 
 ## Logic Synthesis
 ### RTL Design 
-It is the behavioural representaion of the requiered specification.
-RTL to gate level transition is called synthesis.
-the design is converted into gates and connections are made.
-Netlist is the output of the synthesis.
+- It is the behavioural representaion of the requiered specification.
+- RTL to gate level transition is called synthesis.
+- The design is converted into gates and connections are made.
+- Netlist is the output of the synthesis.
 ### .lib:
-It is the collection of logic modules.
-It includes basic logic gates like AND, OR, NOT, etc.
-It also includes different flavours of same gate, like 2 input AND gate, 3 input AND gate.
+- It is the collection of logic modules.
+- It includes basic logic gates like AND, OR, NOT, etc.
+- It also includes different flavours of same gate, like 2 input AND gate, 3 input AND gate.
 ## Labs using Yosys
 
 List of Commands in yosys:
@@ -93,11 +93,20 @@ List of Commands in yosys:
 | To invoke Yosys | yosys |
 | To read librery | read_liberty -lib /home/bhavana/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib |
 | To read design | read_verilog good_mux.v |
-| To synthesis | synth top good_mux.v |
+| To synthesis | synth top good_mux |
 | To generate netlist | abc -liberty ../path |
 | To see realized logic | show |
 | To write netlist | write_verilog -noattr good_mux_netlist.v <br> !gvim good_mux_netlist.v |
 
+Example 1: good_mux.v
+<br>
+read_liberty -lib /home/bhavana/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+read_verilog ../verilog_files/good_mux.v
+synth top good_mux
+abc -liberty ../path_to_.lib
+show
+```
+After going through the above steps, the following results can be obtained.
 <br>
 
 ![image](https://github.com/user-attachments/assets/3fa82c63-7513-43fe-90dd-97a184d9cf14)
@@ -108,8 +117,13 @@ List of Commands in yosys:
 
 
 Writing netlist:
+` write_verilog -noattr good_mux_netlist.v <br> !gvim good_mux_netlist.v `
+
+After this command a new file named "good_mux_netlist.v" is generated which has the netlist of the design.
 <br> 
 ![image](https://github.com/user-attachments/assets/338a9ea1-d384-4318-b16f-24276ccd382d)
+
+<br>
 
 # Day 2
 
@@ -367,7 +381,7 @@ Netlist is logically same as RTL code and the inputs and outputs are same. There
    Inside an always block of a sequential logic, non_blocking assignment should be used.
    
 
-4. Non Standard Verilog Coding:
+4. Non Standard Verilog Coding
 
 ## GLS Labs
 ### ternary_operator_mux
@@ -380,15 +394,31 @@ Netlist is logically same as RTL code and the inputs and outputs are same. There
 ![image](https://github.com/user-attachments/assets/0b5a8fe3-9df2-45f4-86c5-e0b2ea2e677f)
 
 ### Missing sensitivity Mis-Match Example
-![image](https://github.com/user-attachments/assets/8462fb60-4af8-4844-9b73-df27b2f09660)
 
-Netlist of bad_mux
+#### Example of bad_mux.v:
+<br>
+
+![image](https://github.com/user-attachments/assets/849dd326-e142-4e11-bbad-587b250e651e)
+
 Simulation results:
+<br>
+
+ ![image](https://github.com/user-attachments/assets/8462fb60-4af8-4844-9b73-df27b2f09660)
+
+
+Synthesis results:
+<br>
+
+![image](https://github.com/user-attachments/assets/86a2d416-1e5d-4dfa-b559-a18e01a2dd6a)
+
+<br>
+It can be seen that there is a miss-matc between results from simulation and synthesis. This is due to logical error in sensitivity list.
+
+Netlist of bad_mux:
+<br>
 
 ![image](https://github.com/user-attachments/assets/7ab6cf84-bc9f-46df-9d7e-9cdc9fb334b1)
 
-Synthesis results:
-![image](https://github.com/user-attachments/assets/86a2d416-1e5d-4dfa-b559-a18e01a2dd6a)
 
 ### Blocking mis match example
 
@@ -396,5 +426,3 @@ Synthesis results:
 
 ![image](https://github.com/user-attachments/assets/96ef1cad-3c82-4d8d-97ba-a9f1ca0bea0f)
 
-
-![image](https://github.com/user-attachments/assets/3a21c561-748b-47cf-b49f-2cf1dd52af53)
