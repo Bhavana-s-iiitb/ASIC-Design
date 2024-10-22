@@ -137,8 +137,9 @@ Open lib File
 
 Details in the lib file:
 <br>
+![image](https://github.com/user-attachments/assets/c0ecaf2a-0bae-4b42-92c8-73935782bbb6)
 
-![image](https://github.com/user-attachments/assets/2873a7ba-f6e3-4452-bb89-6d7e55e6f9a4)
+
 
 <br>
 Different features of each cell:
@@ -148,13 +149,13 @@ Different features of each cell:
 ![image](https://github.com/user-attachments/assets/cffca201-60db-410a-8e63-61337cf7c3c5)
 
 <br>
+![image](https://github.com/user-attachments/assets/2873a7ba-f6e3-4452-bb89-6d7e55e6f9a4)
+
 
 Comparing details of same cell but different size:
 
-<br>
 
 Smaller cell has smaller area but high delay compared to larger cell which are faster and consume more area.
-![image](https://github.com/user-attachments/assets/c0ecaf2a-0bae-4b42-92c8-73935782bbb6)
 
 <br>
 
