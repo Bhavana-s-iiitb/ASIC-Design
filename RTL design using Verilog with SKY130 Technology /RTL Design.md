@@ -172,6 +172,10 @@ show multiple_modules
 ```
 <br>
 
+![image](https://github.com/user-attachments/assets/4cfe91ee-d04b-43c2-aa30-8bc00ec5c078)
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/0ca6fb1f-8790-4362-8a80-ff47180bfafd)
 
 ![image](https://github.com/user-attachments/assets/0334dee4-cecb-4357-9644-f2910afc2cc6)
@@ -290,27 +294,61 @@ Techniques:
 Sequential logic optimization involves improving the efficiency, speed, and resource usage of sequential circuits (like flip-flops, registers, and state machines)
 
 ## Optimization Labs
+
+### General code for optimization:
+'''
+read_liberty -lib ..\path
+read_verilog ../path
+synth -top file_name
+opt -purge
+
+```
+
 ### opt_check: And realization
+
+
+![image](https://github.com/user-attachments/assets/08c773ce-0fcc-42d1-b6a3-6ce373b68793)
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/f8394eac-0269-4f34-aca6-da1716f899f0)
 
-### opt_chech2: OR realization 
+### opt_check2: OR realization
+
+![image](https://github.com/user-attachments/assets/59c131c6-b64c-4981-9dc3-2a3dd9b3e6f7)
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/b45e7621-8d79-4668-b256-ef80d1285d80)
 
 ### opt_check3: 3 input AND gate
 
+![image](https://github.com/user-attachments/assets/8833b219-7c66-4a32-8edf-863bc3350be1)
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/9fba4f61-b576-40f2-a3b4-f04eb55df8a7)
 
 ### opt_check4: 2 input XNOR gate
 
+![image](https://github.com/user-attachments/assets/7cb9d398-2eed-46ea-956e-918dbd9d6306)
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/5453a759-ee59-49ae-b8a9-0ad290c8db1b)
 
-### multiple_module_opt: 
+### multiple_module_opt:
+
+![image](https://github.com/user-attachments/assets/b8da967a-42a6-4643-a0a4-914416ea620f)
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/d9e7dc7d-a57a-4999-9812-17b4365577b1)
 
 ### multiple_module_opt2
+![image](https://github.com/user-attachments/assets/7d38a384-4907-4336-b707-d0e7d38de80c)
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/22640e00-2270-4b00-8195-474baf25605f)
 
