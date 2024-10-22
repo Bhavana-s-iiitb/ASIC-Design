@@ -135,8 +135,12 @@ Open lib File
 
 <br>
 
+![image](https://github.com/user-attachments/assets/2873a7ba-f6e3-4452-bb89-6d7e55e6f9a4)
+
+
 Details in the lib file:
 <br>
+
 ![image](https://github.com/user-attachments/assets/c0ecaf2a-0bae-4b42-92c8-73935782bbb6)
 
 
@@ -146,17 +150,15 @@ Different features of each cell:
 
 <br>
 
-![image](https://github.com/user-attachments/assets/cffca201-60db-410a-8e63-61337cf7c3c5)
-
-<br>
-
-![image](https://github.com/user-attachments/assets/2873a7ba-f6e3-4452-bb89-6d7e55e6f9a4)
-
 
 Comparing details of same cell but different size:
 
 
 Smaller cell has smaller area but high delay compared to larger cell which are faster and consume more area.
+
+<br>
+
+![image](https://github.com/user-attachments/assets/cffca201-60db-410a-8e63-61337cf7c3c5)
 
 <br>
 
@@ -202,6 +204,8 @@ Flops are needed to avoid propogation of gliches.
 ### Ways of coding Flops:
 1. Asynchronous Flops: There is no clock dependency. Asynchronous flip-flops can change their output state immediately in response to input changes. They do not have setup or hold time requirements related to a clock, leading to potential timing issues. They are often used in situations where immediate response to input changes is necessary, such as in certain control circuits.
 <br>
+Example: async_set.v
+<br>
 
 ![image](https://github.com/user-attachments/assets/d4bf4898-ac6d-4726-933b-3243a5ef8199)
 
@@ -212,7 +216,8 @@ Flops are needed to avoid propogation of gliches.
 <br>
    
 2. Synchronous Flops: Synchronous with clock signal. The output state only at specific times determined by a clock signal (e.g., on the rising or falling edge of the clock). Inputs must be stable for a certain period before and after the clock edge (setup and hold times).
-
+<br>
+Example: sync_reset.v
 <br>
 
 ![image](https://github.com/user-attachments/assets/81e6a1ec-e6c6-4cf3-94de-4a5d222e1ba7)
@@ -237,13 +242,14 @@ Add this command to instruct the tool what library to pick.
 <br>
 
 ## Optimization of Logic
+### Example: mult2.v
 
 ![image](https://github.com/user-attachments/assets/df657491-b34b-481b-b389-b66c4fc542d9)
 
 
 ![image](https://github.com/user-attachments/assets/3e391a42-cb69-4869-9655-ae9f208fc7a6)
 
-### Optimization of Mult8 design
+### Example: mult8.v
 <br>
 
 ![image](https://github.com/user-attachments/assets/e01b7a6c-4f62-4162-b5a9-b555f0f862f6)
@@ -275,10 +281,12 @@ Techniques:
   This optimization focuses on identifying and propagating constant values through the logic to simplify the circuit and improve performance. 
 - Advanced:
   <br>
+  <br>
   1. State Optimization: Optimization of unused states.
  <br>
-           2. Retiming <br>
-           3. Sequential logic cloning (Floor Plan Aware Synthesis): 
+  2. Retiming
+  <br>
+  3. Sequential logic cloning (Floor Plan Aware Synthesis): 
 Sequential logic optimization involves improving the efficiency, speed, and resource usage of sequential circuits (like flip-flops, registers, and state machines)
 
 ## Optimization Labs
