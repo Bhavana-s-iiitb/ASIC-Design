@@ -450,26 +450,18 @@ Netlist is logically same as RTL code and the inputs and outputs are same. There
 
 ![image](https://github.com/user-attachments/assets/0b5a8fe3-9df2-45f4-86c5-e0b2ea2e677f)
 
-### Missing sensitivity Mis-Match Example
+### Missing sensitivity Mismatch Example: bad_mux.v
 
-#### Example of bad_mux.v:
 <br>
 
 ![image](https://github.com/user-attachments/assets/849dd326-e142-4e11-bbad-587b250e651e)
 
-Simulation results:
+Simulation result:
 <br>
 
  ![image](https://github.com/user-attachments/assets/8462fb60-4af8-4844-9b73-df27b2f09660)
 
-
-Synthesis results:
-<br>
-
-![image](https://github.com/user-attachments/assets/86a2d416-1e5d-4dfa-b559-a18e01a2dd6a)
-
-<br>
-It can be seen that there is a miss-matc between results from simulation and synthesis. This is due to logical error in sensitivity list.
+ <br>
 
 Netlist of bad_mux:
 <br>
@@ -477,9 +469,22 @@ Netlist of bad_mux:
 ![image](https://github.com/user-attachments/assets/7ab6cf84-bc9f-46df-9d7e-9cdc9fb334b1)
 
 
-### Blocking mis match example
 
-Netlist of blocking_caevet.v
+Synthesis result:
+<br>
+
+![image](https://github.com/user-attachments/assets/86a2d416-1e5d-4dfa-b559-a18e01a2dd6a)
+
+<br>
+It can be seen that there is a mismatch between results from simulation and synthesis. This is due to logical error in sensitivity list.
+
+
+### Blocking mismatch example: blocking_caveat.v
+
+![image](https://github.com/user-attachments/assets/b1a49b2c-4c8d-4cc9-869e-ae51d76571cb)
+
+
+Netlist of blocking_caveat.v
 <br>
 
 ![image](https://github.com/user-attachments/assets/3ea85dda-3735-43f7-b99b-68871ec21055)
