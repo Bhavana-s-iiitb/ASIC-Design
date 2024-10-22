@@ -479,7 +479,18 @@ Netlist of bad_mux:
 
 ### Blocking mis match example
 
+Netlist of blocking_caevet.v
+<br>
+
+![image](https://github.com/user-attachments/assets/3ea85dda-3735-43f7-b99b-68871ec21055)
+
+<br>
+Simulation result:
+
+
 ![image](https://github.com/user-attachments/assets/94bf93a9-76e9-42f5-b62c-a141ebf3ebec)
 
-![image](https://github.com/user-attachments/assets/96ef1cad-3c82-4d8d-97ba-a9f1ca0bea0f)
+Synthesized result:
+<br>
 
+![image](https://github.com/user-attachments/assets/60c93f82-8451-42f1-bd5a-8bbff4000581)
