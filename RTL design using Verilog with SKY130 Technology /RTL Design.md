@@ -149,6 +149,7 @@ Different features of each cell:
 ![image](https://github.com/user-attachments/assets/cffca201-60db-410a-8e63-61337cf7c3c5)
 
 <br>
+
 ![image](https://github.com/user-attachments/assets/2873a7ba-f6e3-4452-bb89-6d7e55e6f9a4)
 
 
@@ -162,16 +163,19 @@ Smaller cell has smaller area but high delay compared to larger cell which are f
 ## Heirarchical and Flat Synthesis
 
 ### Heirarchical Design
+```
+read_verilog ../verilog_files/multiple_modules.v file
+synth -top multiple_modules
+show multiple_modules
+```
+<br>
 
-1. Read the multiple_modules.v file
-2. ` synth -top multiple_modules `
-3. ` show multiple_modules `
 ![image](https://github.com/user-attachments/assets/0ca6fb1f-8790-4362-8a80-ff47180bfafd)
 
 ![image](https://github.com/user-attachments/assets/0334dee4-cecb-4357-9644-f2910afc2cc6)
 
 <br> 
-Here it can be seen that heirarchies are reserved. The design containes two submodules.
+Here it can be seen that heirarchies are reserved and the design containes two submodules.
 <br>
 
 ![image](https://github.com/user-attachments/assets/47372e48-f239-442d-af6a-1f05ebc29387)
@@ -179,7 +183,7 @@ Here it can be seen that heirarchies are reserved. The design containes two subm
 ### Flat Synthesis
 ` flatten ` is the command to flat out the netlist.
 
-### To synthesis a submodule in a multiple_modules file
+### To synthesize a submodule in a multiple_modules file
 ```
 read_verilog multiple_modules.v
 synth -top sub_module_1
