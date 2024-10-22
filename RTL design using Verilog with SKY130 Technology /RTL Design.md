@@ -296,7 +296,8 @@ Sequential logic optimization involves improving the efficiency, speed, and reso
 ## Optimization Labs
 
 ### General code for optimization:
-'''
+
+```
 read_liberty -lib ..\path
 read_verilog ../path
 synth -top file_name
