@@ -33,5 +33,17 @@ gtkwave dump.vcd
 
 The Simulation output:
 <br>
+1. Pre_synth Simulation:
+<br>
+
+![Screenshot from 2024-10-24 07-53-31](https://github.com/user-attachments/assets/c00f71ef-4aef-405c-8375-9446e303ee6c)
+
+<br>
+2. Post_synth Simulation:
+<br>
 
 ![image](https://github.com/user-attachments/assets/23e55328-eef9-408f-b05d-8b048d08f8c2)
+
+<br>
+
+It can verified that the functionality of pre-synth simulation and post-synth simulation are matching.
