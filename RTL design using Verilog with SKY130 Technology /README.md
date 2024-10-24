@@ -42,8 +42,13 @@ The Simulation output:
 2. Post_synth Simulation:
 <br>
 
-![image](https://github.com/user-attachments/assets/f7a0d84f-afec-423b-b27e-8e261b052250)
+![image](https://github.com/user-attachments/assets/b8db84d8-586f-4da4-b65c-7dfd59ad4ad1)
+
 
 <br>
 
-It can verified that the functionality of pre-synth simulation and post-synth simulation are matching.
+The standard cells can be seen on the left side of the gtkwave analyser, which indicates gate level simulation.
+<br>
+
+
+Hence, it can verified that the functionality of pre-synth simulation and post-synth simulation results are matching.
