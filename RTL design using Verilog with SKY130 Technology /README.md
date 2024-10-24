@@ -42,7 +42,7 @@ The Simulation output:
 2. Post_synth Simulation:
 <br>
 
-![image](https://github.com/user-attachments/assets/23e55328-eef9-408f-b05d-8b048d08f8c2)
+![image](https://github.com/user-attachments/assets/f7a0d84f-afec-423b-b27e-8e261b052250)
 
 <br>
 
