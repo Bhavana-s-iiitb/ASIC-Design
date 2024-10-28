@@ -24,14 +24,14 @@ app/sta
 ./sta
 
 read_liberty /home/bhavana/VLSI/OpenSTA/lab10/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog /home/bhavana/VLSI/OpenSTA/lab10/likith_riscv_netlist.v
+read_verilog /home/bhavana/VLSI/OpenSTA/lab10/bhavana_riscv_netlist.v
 link_design rvmyth
 
-create_clock -name clk -period 9.45 [get_ports clk]
-set_clock_uncertainty [expr 0.05 * 9.45] -setup [get_clocks clk]
-set_clock_uncertainty [expr 0.08 * 9.45] -hold [get_clocks clk]
-set_clock_transition [expr 0.05 * 9.45] [get_clocks clk]
-set_input_transition [expr 0.08 * 9.45] [all_inputs]
+create_clock -name clk -period 10.3 [get_ports clk]
+set_clock_uncertainty [expr 0.05 * 10.3] -setup [get_clocks clk]
+set_clock_uncertainty [expr 0.08 * 10.3] -hold [get_clocks clk]
+set_clock_transition [expr 0.05 * 10.3] [get_clocks clk]
+set_input_transition [expr 0.08 * 10.3] [all_inputs]
 
 ```
 
