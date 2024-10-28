@@ -17,7 +17,6 @@ app/sta
 ## Timing Analysis
 
 - Clock period = 10.3ns
-<br>
 - Setup uncertainty and clock transition will be 5% of clock
 - Hold uncertainty and data transition will be 8% of clock.
 
