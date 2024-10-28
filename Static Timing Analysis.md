@@ -17,6 +17,7 @@ app/sta
 ## Timing Analysis
 
 -Clock period = 10.3ns
+<br>
 -Setup uncertainty and clock transition will be 5% of clock
 -Hold uncertainty and data transition will be 8% of clock.
 
@@ -33,7 +34,7 @@ set_clock_uncertainty [expr 0.08 * 9.45] -hold [get_clocks clk]
 set_clock_transition [expr 0.05 * 9.45] [get_clocks clk]
 set_input_transition [expr 0.08 * 9.45] [all_inputs]
 
-
+```
 
 
 ![image](https://github.com/user-attachments/assets/27391283-b64f-4ee9-a2da-9ea300b4d1b9)
