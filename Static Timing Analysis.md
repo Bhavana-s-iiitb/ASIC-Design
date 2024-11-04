@@ -109,5 +109,7 @@ report_wns -digits {4} >> ./sta_output/sta_wns.txt
 
 <img width="215" alt="image" src="https://github.com/user-attachments/assets/1bb669bf-ec90-4eae-b9b2-8f9bffd19a14">
 
+<img width="421" alt="image" src="https://github.com/user-attachments/assets/8581bbe1-45be-4195-bb81-cb3b9c28b4ad">
 
-<img width="415" alt="image" src="https://github.com/user-attachments/assets/bb3dd96c-85a1-43ca-8ed3-14a9371fd5ca">
+![image](https://github.com/user-attachments/assets/60d2da3d-0c54-468a-847b-f82d69a8eab4)
+
