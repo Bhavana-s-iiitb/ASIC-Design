@@ -51,6 +51,7 @@ set_input_transition [expr 0.08 * 10.3] [all_inputs]
 
 ![image](https://github.com/user-attachments/assets/0b1a3455-7647-4e1b-aec7-0ea9b6b820e9)
 
+# PVT Corner Analysis
 
 ![image](https://github.com/user-attachments/assets/782690fa-3b57-42ef-bcc3-b72282a18221)
 
@@ -106,8 +107,12 @@ report_wns -digits {4} >> ./sta_output/sta_wns.txt
 ![image](https://github.com/user-attachments/assets/54ae33c4-0e60-44cd-9846-740ad6ed90a2)
 
 
-
+### Table showing values of TNS and WNS
 <img width="215" alt="image" src="https://github.com/user-attachments/assets/1bb669bf-ec90-4eae-b9b2-8f9bffd19a14">
+
+<br>
+
+### Graph of TNS and WNS
 
 <img width="421" alt="image" src="https://github.com/user-attachments/assets/8581bbe1-45be-4195-bb81-cb3b9c28b4ad">
 
