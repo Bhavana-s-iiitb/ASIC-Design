@@ -53,8 +53,13 @@ set_input_transition [expr 0.08 * 10.3] [all_inputs]
 
 # PVT Corner Analysis
 
+### vsdbabysoc_synth.sdc: For specifying constraints.
+
 ![image](https://github.com/user-attachments/assets/782690fa-3b57-42ef-bcc3-b72282a18221)
 
+<br>
+
+### Tcl script
 
 ```
 set list_of_lib_files(1) "sky130_fd_sc_hd__tt_025C_1v80.lib"
@@ -100,11 +105,17 @@ report_wns -digits {4} >> ./sta_output/sta_wns.txt
 }
 
 ```
+<br>
 
 
-![image](https://github.com/user-attachments/assets/63ca57c2-8894-4b61-b384-cf65528c02b7)
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/63ca57c2-8894-4b61-b384-cf65528c02b7">
 
-![image](https://github.com/user-attachments/assets/54ae33c4-0e60-44cd-9846-740ad6ed90a2)
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/54ae33c4-0e60-44cd-9846-740ad6ed90a2">
+
+<br>
+
+After executing these commands in sta prompt, reports will be dumped in sta_output directory. The setup slack and worst negative slack graph analysis is shown below.
+<br>
 
 
 ### Table showing values of TNS and WNS
@@ -114,7 +125,6 @@ report_wns -digits {4} >> ./sta_output/sta_wns.txt
 
 ### Graph of TNS and WNS
 
-<img width="421" alt="image" src="https://github.com/user-attachments/assets/8581bbe1-45be-4195-bb81-cb3b9c28b4ad">
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/8581bbe1-45be-4195-bb81-cb3b9c28b4ad">
 
-![image](https://github.com/user-attachments/assets/60d2da3d-0c54-468a-847b-f82d69a8eab4)
-
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/60d2da3d-0c54-468a-847b-f82d69a8eab4">
