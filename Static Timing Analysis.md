@@ -1,4 +1,4 @@
-# Installation of Tools:
+# 1 Installation of Tools:
 Follow the given commands to install OpenSTA
 ```
 cd
@@ -51,9 +51,13 @@ set_input_transition [expr 0.08 * 10.3] [all_inputs]
 
 ![image](https://github.com/user-attachments/assets/0b1a3455-7647-4e1b-aec7-0ea9b6b820e9)
 
-# PVT Corner Analysis
+# 2 PVT Corner Analysis
 
 ### vsdbabysoc_synth.sdc: For specifying constraints.
+
+- Clock period = 10.3ns
+- Setup uncertainty and clock transition is 5% of clock
+- Hold uncertainty and data transition is 8% of clock
 
 ![image](https://github.com/user-attachments/assets/782690fa-3b57-42ef-bcc3-b72282a18221)
 
