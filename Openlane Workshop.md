@@ -58,7 +58,18 @@
 
 ![image](https://github.com/user-attachments/assets/7750f9eb-6897-40e5-b1f5-2cf88e20c36f)
 
+Correction of DRC
+![image](https://github.com/user-attachments/assets/07a877f4-c724-4c8b-bf8d-4c151989dce8)
+
 
 ![image](https://github.com/user-attachments/assets/e4f4530a-d857-4a92-9a9a-f7e08b008cc9)
 
 ![image](https://github.com/user-attachments/assets/fd29dd6e-9de5-4c84-9874-4cceab4404bf)
+
+# Day 4
+
+![image](https://github.com/user-attachments/assets/546092b8-6236-4dcd-ba7a-d10a059d733e)
+
+![image](https://github.com/user-attachments/assets/e09f54f2-61f1-4af3-9a11-78af7b227bbf)
+
+![image](https://github.com/user-attachments/assets/84222307-4fc8-4898-9afa-80aede522bfa)
