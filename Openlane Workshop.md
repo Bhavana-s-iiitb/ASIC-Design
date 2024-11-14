@@ -80,3 +80,20 @@ Correction of DRC
 
 ![image](https://github.com/user-attachments/assets/a610be37-73d0-45fc-8d44-0b5d2fdb7ffc)
 
+Saving Inverter with custom name:
+
+![image](https://github.com/user-attachments/assets/bea835ed-7943-44d5-8b3f-f274967d01f5)
+
+Writing lef File:
+
+![image](https://github.com/user-attachments/assets/1e2dc9df-6bda-4651-ab49-0dbef5ff0546)
+
+4. Copy newly generated lef file
+
+5. ![image](https://github.com/user-attachments/assets/0b583c79-bc1c-405a-9ec8-2e7455152602)
+
+6. Edit the config.tcl
+
+   ![image](https://github.com/user-attachments/assets/77bbdcf8-9941-45ea-b9e1-68ce5c718860)
+
+7. ![image](https://github.com/user-attachments/assets/fa6fcfce-88cf-4fd4-9b3b-1f836243e0a8)
