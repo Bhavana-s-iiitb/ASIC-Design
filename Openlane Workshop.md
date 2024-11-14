@@ -97,3 +97,40 @@ Writing lef File:
    ![image](https://github.com/user-attachments/assets/77bbdcf8-9941-45ea-b9e1-68ce5c718860)
 
 7. ![image](https://github.com/user-attachments/assets/fa6fcfce-88cf-4fd4-9b3b-1f836243e0a8)
+   ![image](https://github.com/user-attachments/assets/452d3008-6e20-449a-9afb-77d4c789341f)
+
+   Noting down the chip area and slack value:
+   ![image](https://github.com/user-attachments/assets/bb6d886b-834f-4347-8e14-b303f58e543d)
+   ![image](https://github.com/user-attachments/assets/a1c0784e-18d3-4ee5-9ec6-b4d73744f991)
+
+
+Changing Values
+![image](https://github.com/user-attachments/assets/80033c86-99ed-42f1-9c98-01eddf7003e9)
+
+Comparing the previous values:
+![image](https://github.com/user-attachments/assets/44e4caac-1b4b-403e-9f4f-07ac6e3eeb63)
+
+![image](https://github.com/user-attachments/assets/ab664f59-6ef5-423e-bc80-ea6b27e80cf1)
+Screenshot of merged.lef in tmp:
+![image](https://github.com/user-attachments/assets/7bdb5fa3-dfbc-480b-b0b1-736132e00b7d)
+
+Facing unexpected unexplainable error while running floorplan
+![image](https://github.com/user-attachments/assets/afc93d64-11b2-4ff3-812d-ef5ed65e8b75)
+
+Running new set of commands:
+![image](https://github.com/user-attachments/assets/ad66d05d-97e7-4555-819d-224a13c18eb3)
+
+![image](https://github.com/user-attachments/assets/2b828493-7eba-40c7-8133-769e24943a9c)
+
+![image](https://github.com/user-attachments/assets/3138dbaf-2819-4649-b985-5143a211b340)
+
+
+Screenshot of placement.def in magic
+![image](https://github.com/user-attachments/assets/954a466d-b60a-4a20-b90e-dc869b551fdb)
+
+Finding the custom inverter
+
+![image](https://github.com/user-attachments/assets/48ebc4ea-d996-4e3a-92f8-bfcbbaf1a534)
+
+![image](https://github.com/user-attachments/assets/db61c72e-f4f9-45ae-8a78-0314ac832840)
+
