@@ -134,3 +134,27 @@ Finding the custom inverter
 
 ![image](https://github.com/user-attachments/assets/db61c72e-f4f9-45ae-8a78-0314ac832840)
 
+Timing analysis using Open STA:
+
+![image](https://github.com/user-attachments/assets/975be719-186c-4eaa-b05f-c9f1bbf2e886)
+
+
+![image](https://github.com/user-attachments/assets/b9da5207-5862-40ea-b74c-efe79705cd18)
+
+
+![image](https://github.com/user-attachments/assets/5787a554-b9bc-4287-98aa-fdf09c3a41a8)
+
+Newly created sta.conf:
+
+![image](https://github.com/user-attachments/assets/e8543877-127c-438c-aa7a-b0dd00e9850b)
+
+
+
+![image](https://github.com/user-attachments/assets/f1e8fc93-84af-42ba-9d05-e6b23445abfc)
+
+Newly created pre_sta.conf file and my_base.sdc file:
+
+![image](https://github.com/user-attachments/assets/22e05ac1-375b-4829-b1fa-ac3e2cb87620)
+
+
+![image](https://github.com/user-attachments/assets/d313fd0e-14af-4f07-9b8e-1866f34dce6f)
