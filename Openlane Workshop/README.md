@@ -696,18 +696,23 @@ Running sta in new window:
 <br>
 10. Make timing ECO fixes to remove all violations.
 <br>
-OR gate of drive strength 2 is driving 4 fanouts
-<br>
+
+Reduced Slack:
 
 ![image](https://github.com/user-attachments/assets/714dfe64-4cc0-45c9-bfef-071b4f3adab3)
 
 
 ![image](https://github.com/user-attachments/assets/51223511-c5af-4c7c-ad8d-bd8c98b22ab3)
 
+
+
+![image](https://github.com/user-attachments/assets/5e23973f-0067-448d-97e1-cca73318f90e)
+
 <br>
 OR gate of drive strength 2 is driving 4 fanouts
 <br>
 
+![image](https://github.com/user-attachments/assets/904d5825-765f-4445-bc95-b7cc78edebcc)
 
-![image](https://github.com/user-attachments/assets/5e23973f-0067-448d-97e1-cca73318f90e)
+
 
