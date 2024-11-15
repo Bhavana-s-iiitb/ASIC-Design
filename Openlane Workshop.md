@@ -168,3 +168,29 @@ Commands to include new lef and perform synthesis
 Screenshot after final run_synthesis:
 
 ![image](https://github.com/user-attachments/assets/eabb488b-094f-47f0-aea6-4c44cfb94d5f)
+
+Running sta in new window:
+
+![image](https://github.com/user-attachments/assets/5be8282e-fd69-4000-9b02-74b978dca004)
+
+
+![image](https://github.com/user-attachments/assets/647ea7f0-3fb9-4150-a67d-5a993f4a23a2)
+
+<br>
+10. Make timing ECO fixes to remove all violations.
+<br>
+OR gate of drive strength 2 is driving 4 fanouts
+<br>
+
+![image](https://github.com/user-attachments/assets/714dfe64-4cc0-45c9-bfef-071b4f3adab3)
+
+
+![image](https://github.com/user-attachments/assets/51223511-c5af-4c7c-ad8d-bd8c98b22ab3)
+
+<br>
+OR gate of drive strength 2 is driving 4 fanouts
+<br>
+
+
+![image](https://github.com/user-attachments/assets/5e23973f-0067-448d-97e1-cca73318f90e)
+
