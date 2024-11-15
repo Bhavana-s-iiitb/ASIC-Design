@@ -159,7 +159,7 @@ Screenshots of floorplan def in magic
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/1c21cd5e-41a6-4be3-9d49-3e5cbd183e69">
 
 
-## Section 3 - Design library cell using Magic Layout and ngspice characterization (18/03/2024 - 21/03/2024)
+## Section 3 - Design library cell using Magic Layout and ngspice characterization 
 
 ### Theory
 
@@ -196,6 +196,7 @@ ls
 magic -T sky130A.tech sky130_inv.mag &
 
 
+```
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/ff851ebb-e756-4f6a-9c2e-3591d2a98a15">
 
