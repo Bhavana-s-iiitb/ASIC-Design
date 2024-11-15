@@ -369,11 +369,6 @@ Edited config.tcl to include the added lef and change library to ones we added i
 
    ![image](https://github.com/user-attachments/assets/77bbdcf8-9941-45ea-b9e1-68ce5c718860)
 
-
-
-![image](https://github.com/user-attachments/assets/fa6fcfce-88cf-4fd4-9b3b-1f836243e0a8)
-   ![image](https://github.com/user-attachments/assets/452d3008-6e20-449a-9afb-77d4c789341f)
-
 #### 6. Run openlane flow synthesis with newly inserted custom inverter cell.
 
 Commands to invoke the OpenLANE flow include new lef and perform synthesis 
@@ -403,12 +398,21 @@ add_lefs -src $lefs
 # Now that the design is prepped and ready, we can run synthesis using following command
 run_synthesis
 ```
-### 6. Noting down the chip area and slack value:
+
+Noting down the chip area and slack value:
+<br>
+
+
+![image](https://github.com/user-attachments/assets/fa6fcfce-88cf-4fd4-9b3b-1f836243e0a8)
+   ![image](https://github.com/user-attachments/assets/452d3008-6e20-449a-9afb-77d4c789341f)
+
+
    ![image](https://github.com/user-attachments/assets/bb6d886b-834f-4347-8e14-b303f58e543d)
    ![image](https://github.com/user-attachments/assets/a1c0784e-18d3-4ee5-9ec6-b4d73744f991)
 
-
+<br>
 Changing Values
+<br>
 ![image](https://github.com/user-attachments/assets/80033c86-99ed-42f1-9c98-01eddf7003e9)
 
 Comparing the previous values:
