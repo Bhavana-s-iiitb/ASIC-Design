@@ -117,12 +117,11 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/a9620b3d-19db-4ac0-8126-f250b35c658e">
 
 
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/9dbe0a2d-0c08-46db-94f9-a3b211e2acde">
+
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/89962473-76b7-4f02-8896-4e414cf626c5">
 
 
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/1c21cd5e-41a6-4be3-9d49-3e5cbd183e69">
 
 #### 4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
 
@@ -136,6 +135,29 @@ run_placement
 Screenshots of placement run
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/c6e698c3-1e69-407c-a3f5-5227b9c16356">
+
+
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/9dbe0a2d-0c08-46db-94f9-a3b211e2acde">
+
+
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/1c21cd5e-41a6-4be3-9d49-3e5cbd183e69">
+
+#### 5. Load generated placement def in magic tool and explore the placement.
+
+Commands to load placement def in magic in another terminal
+
+```bash
+# Change directory to path containing generated placement def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/
+
+# Command to load the placement def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
+
+Screenshots of floorplan def in magic
+
+
+
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/ff851ebb-e756-4f6a-9c2e-3591d2a98a15">
 
