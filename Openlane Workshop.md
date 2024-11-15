@@ -137,10 +137,7 @@ Screenshots of placement run
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/c6e698c3-1e69-407c-a3f5-5227b9c16356">
 
 
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/9dbe0a2d-0c08-46db-94f9-a3b211e2acde">
 
-
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/1c21cd5e-41a6-4be3-9d49-3e5cbd183e69">
 
 #### 5. Load generated placement def in magic tool and explore the placement.
 
@@ -156,6 +153,47 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Screenshots of floorplan def in magic
 
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/9dbe0a2d-0c08-46db-94f9-a3b211e2acde">
+
+
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/1c21cd5e-41a6-4be3-9d49-3e5cbd183e69">
+
+
+## Section 3 - Design library cell using Magic Layout and ngspice characterization (18/03/2024 - 21/03/2024)
+
+### Theory
+
+### Implementation
+
+* Section 3 tasks:-
+1. Clone custom inverter standard cell design from github repository: [Standard cell design and characterization using OpenLANE flow](https://github.com/nickson-jose/vsdstdcelldesign).
+2. Load the custom inverter layout in magic and explore.
+3. Spice extraction of inverter in magic.
+4. Editing the spice model file for analysis through simulation.
+5. Post-layout ngspice simulations.
+6. Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
+
+
+#### 1. Clone custom inverter standard cell design from github repository
+
+```bash
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Clone the repository with custom inverter design
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+
+# Change into repository directory
+cd vsdstdcelldesign
+
+# Copy magic tech file to the repo directory for easy access
+cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
+
+# Check contents whether everything is present
+ls
+
+# Command to open custom inverter layout in magic
+magic -T sky130A.tech sky130_inv.mag &
 
 
 
