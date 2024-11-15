@@ -154,7 +154,17 @@ Newly created sta.conf:
 
 Newly created pre_sta.conf file and my_base.sdc file:
 
-![image](https://github.com/user-attachments/assets/22e05ac1-375b-4829-b1fa-ac3e2cb87620)
+![image](https://github.com/user-attachments/assets/72401444-d355-40c4-a895-82dd07767143)
 
 
 ![image](https://github.com/user-attachments/assets/d313fd0e-14af-4f07-9b8e-1866f34dce6f)
+
+After running pre_sta.conf
+
+![image](https://github.com/user-attachments/assets/a78c5709-784d-43df-9d14-70512c9cce83)
+
+Commands to include new lef and perform synthesis
+<br>
+Screenshot after final run_synthesis:
+
+![image](https://github.com/user-attachments/assets/eabb488b-094f-47f0-aea6-4c44cfb94d5f)
