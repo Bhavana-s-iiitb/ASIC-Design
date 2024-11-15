@@ -219,7 +219,7 @@ magic -T sky130A.tech sky130_inv.mag &
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/b5f77485-0379-4e4f-91a7-28d50af940d0">
 
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/649c42dd-a32d-4ef3-b4a2-e639e1554f53"
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/649c42dd-a32d-4ef3-b4a2-e639e1554f53">
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/22e70ed3-28cd-4f0e-acc3-feede10a3b27">
 
@@ -229,7 +229,34 @@ magic -T sky130A.tech sky130_inv.mag &
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/512ad54d-95a7-4e59-b69d-2a255178cece">
 
-### Incorrect Poly9:
+#### 6. Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
+
+Link to Sky130 Periphery rules: [https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html)
+
+Commands to download and view the corrupted skywater process magic tech file and associated files to perform drc corrections
+
+```bash
+# Change to home directory
+cd
+
+# Command to download the lab files
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+
+# Since lab file is compressed command to extract it
+tar xfz drc_tests.tgz
+
+# Change directory into the lab folder
+cd drc_tests
+
+# List all files and directories present in the current directory
+ls -al
+
+# Command to view .magicrc file
+gvim .magicrc
+
+# Command to open magic tool in better graphics
+magic -d XR &
+```
 <br>
 
 
@@ -243,9 +270,29 @@ Correction of DRC
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/fd29dd6e-9de5-4c84-9874-4cceab4404bf">
 
-# Day 4
+## Section 4 - Pre-layout timing analysis and importance of good clock tree
+Commands to open the custom inverter layout
+
+```bash
+# Change directory to vsdstdcelldesign
+cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+
+# Command to open custom inverter layout in magic
+magic -T sky130A.tech sky130_inv.mag &
+```
+
 
 ![image](https://github.com/user-attachments/assets/546092b8-6236-4dcd-ba7a-d10a059d733e)
+
+Commands for tkcon window to set grid as tracks of locali layer
+
+```tcl
+# Get syntax for grid command
+help grid
+
+# Set grid values accordingly
+grid 0.46um 0.34um 0.23um 0.17um
+```
 
 ![image](https://github.com/user-attachments/assets/69cbd5bd-84cb-4961-a177-9b452d4cbe0f)
 
@@ -256,26 +303,28 @@ Correction of DRC
 
 ![image](https://github.com/user-attachments/assets/a610be37-73d0-45fc-8d44-0b5d2fdb7ffc)
 
-Saving Inverter with custom name:
+### 2. Saving Inverter with custom name:
 
 ![image](https://github.com/user-attachments/assets/bea835ed-7943-44d5-8b3f-f274967d01f5)
 
-Writing lef File:
+### 3. Writing lef File:
 
 ![image](https://github.com/user-attachments/assets/1e2dc9df-6bda-4651-ab49-0dbef5ff0546)
 
-4. Copy newly generated lef file
+### 4. Copy newly generated lef file
 
-5. ![image](https://github.com/user-attachments/assets/0b583c79-bc1c-405a-9ec8-2e7455152602)
+ ![image](https://github.com/user-attachments/assets/0b583c79-bc1c-405a-9ec8-2e7455152602)
 
-6. Edit the config.tcl
+ ### 5. Edit the config.tcl
 
    ![image](https://github.com/user-attachments/assets/77bbdcf8-9941-45ea-b9e1-68ce5c718860)
 
-7. ![image](https://github.com/user-attachments/assets/fa6fcfce-88cf-4fd4-9b3b-1f836243e0a8)
+
+
+![image](https://github.com/user-attachments/assets/fa6fcfce-88cf-4fd4-9b3b-1f836243e0a8)
    ![image](https://github.com/user-attachments/assets/452d3008-6e20-449a-9afb-77d4c789341f)
 
-   Noting down the chip area and slack value:
+### 6. Noting down the chip area and slack value:
    ![image](https://github.com/user-attachments/assets/bb6d886b-834f-4347-8e14-b303f58e543d)
    ![image](https://github.com/user-attachments/assets/a1c0784e-18d3-4ee5-9ec6-b4d73744f991)
 
