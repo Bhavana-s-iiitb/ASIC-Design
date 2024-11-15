@@ -229,6 +229,8 @@ magic -T sky130A.tech sky130_bhavana_inv.mag &
 
 ```
 
+#### 2. Load the custom inverter layout in magic and explore.
+
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/ff851ebb-e756-4f6a-9c2e-3591d2a98a15">
 
 
@@ -240,17 +242,55 @@ magic -T sky130A.tech sky130_bhavana_inv.mag &
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/a3bc3555-6d9d-46e8-b885-0c4b3bc5886b">
 
 
+#### 3. Spice extraction of inverter in magic.
 
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/e03f5de5-1b79-4b85-8e57-f408a2b05871">
+Commands for spice extraction of the custom inverter layout to be used in tkcon window of magic
+
+```tcl
+# Check current directory
+pwd
+
+# Extraction command to extract to .ext format
+extract all
+
+# Before converting ext to spice this command enable the parasitic extraction also
+ext2spice cthresh 0 rthresh 0
+
+# Converting to ext to spice
+ext2spice
+```
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/5fa66d6b-4ba9-42c2-a8c4-220681a5ddf3">
 
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/08743da9-0e97-4838-bfdc-bac4ce1b392d">
 
+#### 4. Editing the spice model file for analysis through simulation.
+
+Measuring unit distance in layout grid
+<br>
+
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/b5f77485-0379-4e4f-91a7-28d50af940d0">
 
+<br>
+
+Final edited spice file ready for ngspice simulation
+<br>
+
+
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/649c42dd-a32d-4ef3-b4a2-e639e1554f53">
+#### 5. Post-layout ngspice simulations.
+
+Commands for ngspice simulation
+
+```bash
+# Command to directly load spice file for simulation to ngspice
+ngspice sky130_inv.spice
+
+# Now that we have entered ngspice with the simulation spice file loaded we just have to load the plot
+plot y vs time a
+```
+
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/22e70ed3-28cd-4f0e-acc3-feede10a3b27">
 
