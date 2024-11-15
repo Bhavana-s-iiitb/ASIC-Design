@@ -301,8 +301,8 @@ Correction of DRC
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/fd29dd6e-9de5-4c84-9874-4cceab4404bf">
 
-## Section 4 - Pre-layout timing analysis and importance of good clock tree
-Commands to open the custom inverter layout
+
+### Commands to open the custom inverter layout
 
 ```bash
 # Change directory to vsdstdcelldesign
@@ -315,7 +315,7 @@ magic -T sky130A.tech sky130_bhavana_inv.mag &
 
 ![image](https://github.com/user-attachments/assets/546092b8-6236-4dcd-ba7a-d10a059d733e)
 
-Commands for tkcon window to set grid as tracks of locali layer
+### Commands for tkcon window to set grid as tracks of locali layer
 
 ```tcl
 # Get syntax for grid command
