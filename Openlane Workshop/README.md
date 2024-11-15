@@ -870,7 +870,17 @@ unset ::env(LIB_CTS)
 run_cts
 ```
 
+![image](https://github.com/user-attachments/assets/c521e490-e167-4a58-87f9-b28d8bcfe073)
+
+![Screenshot 2024-11-15 023433](https://github.com/user-attachments/assets/882c17ee-ef09-43aa-bbc6-1d3088be18e4)
+
 ![image](https://github.com/user-attachments/assets/1c4c6d71-9f7a-421b-8317-ef1271501498)
+
+
+![Screenshot 2024-11-15 023400](https://github.com/user-attachments/assets/eb1ed38d-d337-4d95-894a-cc68a574c5b3)
+
+![Screenshot 2024-11-15 023226](https://github.com/user-attachments/assets/6cda5162-73eb-47b9-8e8d-327ec336ee18)
+
 
 ## Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA (25/03/2024 - 26/03/2024)
 
@@ -1036,3 +1046,4 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pins} -forma
 # Exit to OpenLANE flow
 exit
 ```
+
