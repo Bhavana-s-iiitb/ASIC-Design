@@ -44,8 +44,11 @@ Flop\ Ratio = \frac{1613}{14876} = 0.108429685
 ```math
 Percentage\ of\ DFF's = 0.108429685 * 100 = 10.84296854\ \%
 ```
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/fd43373a-5667-4f8f-8646-db18ae69fb50">
 
-## Section 2 - Good floorplan vs bad floorplan and introduction to library cells (16/03/2024 - 17/03/2024)
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/fe797c9e-0b3c-4bd8-9f72-f436e73342ee">
+
+## Section 2 - Good floorplan vs bad floorplan and introduction to library cells 
 
 ### Theory
 
@@ -62,14 +65,9 @@ Section 2 tasks:-
 Area\ of\ die\ in\ microns = Die\ width\ in\ microns * Die\ height\ in\ microns
 ```
 
-* All section 2 logs, reports and results can be found in following run folder:
-
 #### 2. Calculate the die area in microns from the values in floorplan def.
 
 Screenshot of contents of floorplan def
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/fd43373a-5667-4f8f-8646-db18ae69fb50">
-
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/fe797c9e-0b3c-4bd8-9f72-f436e73342ee">
 
 According to floorplan def
 ```math
@@ -93,6 +91,13 @@ Die\ height\ in\ microns = \frac{671405}{1000} = 671.405\ Microns
 ```math
 Area\ of\ die\ in\ microns = 660.685 * 671.405 = 443587.212425\ Square\ Microns
 ```
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/331ae73a-02e4-432c-8fc0-e1153dd74f97">
+
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/020b2149-b800-4aa8-9337-2b5f5f412106">
+
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/e011cd0f-695f-4908-9cbf-0287a9c5c697">
+
+<br>
 
 #### 3. Load generated floorplan def in magic tool and explore the floorplan.
 
@@ -106,11 +111,6 @@ cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 ```
 
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/331ae73a-02e4-432c-8fc0-e1153dd74f97">
-
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/020b2149-b800-4aa8-9337-2b5f5f412106">
-
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/e011cd0f-695f-4908-9cbf-0287a9c5c697">
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/bf2b4e36-a86c-4f0f-98d4-34178d74bab2">
 
