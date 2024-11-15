@@ -719,7 +719,7 @@ Commands to perform analysis and optimize timing by replacing with OR gate of dr
 
 ```tcl
 # Reports all the connections to a net
-report_net -connections _11675_
+report_net -connections _11672_
 
 # Replacing cell
 replace_cell _14514_ sky130_fd_sc_hd__or3_4
@@ -729,3 +729,91 @@ report_checks -fields {net cap slew input_pins} -digits 4
 ```
 
 Result - slack reduced
+
+![image](https://github.com/user-attachments/assets/f45ffa9c-2de3-41db-b420-c6da534eb631)
+
+OR gate of drive strength 2 is driving 4 fanouts
+<br>
+
+
+![image](https://github.com/user-attachments/assets/064b5bfc-9c04-4796-847f-90f82c6c008d)
+
+<br>
+
+Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
+
+```tcl
+# Reports all the connections to a net
+report_net -connections _11675_
+
+# Replacing cell
+replace_cell _14514_ sky130_fd_sc_hd__or3_4
+
+# Generating custom timing report
+report_checks -fields {net cap slew input_pins} -digits 4
+```
+Reduced slack
+<br>
+
+![image](https://github.com/user-attachments/assets/5862a339-fe98-4195-9968-27fda477ec18)
+
+<br>
+
+Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
+
+```tcl
+# Reports all the connections to a net
+report_net -connections _11643_
+
+# Replacing cell
+replace_cell _14481_ sky130_fd_sc_hd__or4_4
+
+# Generating custom timing report
+report_checks -fields {net cap slew input_pins} -digits 4
+```
+
+Result - slack reduced
+![image](https://github.com/user-attachments/assets/d3c0ebf3-7faa-4263-a716-32d4e8eceb16)
+
+
+Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
+
+```tcl
+# Reports all the connections to a net
+report_net -connections _11668_
+
+# Replacing cell
+replace_cell _14506_ sky130_fd_sc_hd__or4_4
+
+# Generating custom timing report
+report_checks -fields {net cap slew input_pins} -digits 4
+```
+
+Result - slack reduced
+
+<br>
+
+![image](https://github.com/user-attachments/assets/fe3086da-bba1-4775-9f07-48bdb2c96d15)
+
+### We started ECO fixes at wns -23.9000 and now we stand at wns -22.6173 we reduced around 1.2827 ns of violation
+
+
+#### 11. Replace the old netlist with the new netlist generated after timing ECO fix and implement the floorplan, placement and cts.
+
+Now to insert this updated netlist to PnR flow and we can use `write_verilog` and overwrite the synthesis netlist but before that we are going to make a copy of the old old netlist
+
+Commands to make copy of netlist
+
+```bash
+# Change from home directory to synthesis results directory
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/
+
+# List contents of the directory
+ls
+
+# Copy and rename the netlist
+cp picorv32a.synthesis.v picorv32a.synthesis_old.v
+
+# List contents of the directory
+ls
+```
