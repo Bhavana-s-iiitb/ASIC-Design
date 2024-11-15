@@ -413,17 +413,46 @@ Noting down the chip area and slack value:
 <br>
 Changing Values
 <br>
+
 ![image](https://github.com/user-attachments/assets/80033c86-99ed-42f1-9c98-01eddf7003e9)
 
-Comparing the previous values:
+Comparing the previous values:<br>
+
+<br>
+
+
 ![image](https://github.com/user-attachments/assets/44e4caac-1b4b-403e-9f4f-07ac6e3eeb63)
 
+<br>
+
+
+
 ![image](https://github.com/user-attachments/assets/ab664f59-6ef5-423e-bc80-ea6b27e80cf1)
+
+<br>
+
+
 Screenshot of merged.lef in tmp:
+
+<br>
+
+
 ![image](https://github.com/user-attachments/assets/7bdb5fa3-dfbc-480b-b0b1-736132e00b7d)
 
+<br>
+
+
+
 Facing unexpected unexplainable error while running floorplan
+
+<br>
+
+
 ![image](https://github.com/user-attachments/assets/afc93d64-11b2-4ff3-812d-ef5ed65e8b75)
+
+<br>
+
+
 
 Running new set of commands:
 ![image](https://github.com/user-attachments/assets/ad66d05d-97e7-4555-819d-224a13c18eb3)
@@ -434,15 +463,33 @@ Running new set of commands:
 
 
 Screenshot of placement.def in magic
+
+<br>
+
+
 ![image](https://github.com/user-attachments/assets/954a466d-b60a-4a20-b90e-dc869b551fdb)
 
+<br>
+
+
 Finding the custom inverter
+
+<br>
+
+
 
 ![image](https://github.com/user-attachments/assets/48ebc4ea-d996-4e3a-92f8-bfcbbaf1a534)
 
 ![image](https://github.com/user-attachments/assets/db61c72e-f4f9-45ae-8a78-0314ac832840)
+<br>
+
+
 
 Timing analysis using Open STA:
+
+<br>
+
+
 
 ![image](https://github.com/user-attachments/assets/975be719-186c-4eaa-b05f-c9f1bbf2e886)
 
@@ -452,7 +499,15 @@ Timing analysis using Open STA:
 
 ![image](https://github.com/user-attachments/assets/5787a554-b9bc-4287-98aa-fdf09c3a41a8)
 
+
+<br>
+
+
 Newly created sta.conf:
+
+<br>
+
+
 
 ![image](https://github.com/user-attachments/assets/e8543877-127c-438c-aa7a-b0dd00e9850b)
 
@@ -460,7 +515,15 @@ Newly created sta.conf:
 
 ![image](https://github.com/user-attachments/assets/f1e8fc93-84af-42ba-9d05-e6b23445abfc)
 
+<br>
+
+
+
 Newly created pre_sta.conf file and my_base.sdc file:
+
+<br>
+
+
 
 ![image](https://github.com/user-attachments/assets/72401444-d355-40c4-a895-82dd07767143)
 
@@ -468,6 +531,10 @@ Newly created pre_sta.conf file and my_base.sdc file:
 ![image](https://github.com/user-attachments/assets/d313fd0e-14af-4f07-9b8e-1866f34dce6f)
 
 After running pre_sta.conf
+
+<br>
+
+
 
 ![image](https://github.com/user-attachments/assets/a78c5709-784d-43df-9d14-70512c9cce83)
 
