@@ -1,3 +1,6 @@
+# Digital VLSI SoC Design and Planning
+
+## Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 #### 1. Run 'picorv32a' design synthesis using OpenLANE flow and generate necessary outputs.
 
 Commands to invoke the OpenLANE flow and perform synthesis
@@ -48,13 +51,10 @@ Percentage\ of\ DFF's = 0.108429685 * 100 = 10.84296854\ \%
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/fe797c9e-0b3c-4bd8-9f72-f436e73342ee">
 
-## Section 2 - Good floorplan vs bad floorplan and introduction to library cells 
+## Day 2 - Good floorplan vs bad floorplan and introduction to library cells 
 
-### Theory
 
-### Implementation
-
-Section 2 tasks:- 
+### Day 2 tasks:- 
 1. Run 'picorv32a' design floorplan using OpenLANE flow and generate necessary outputs.
 2. Calculate the die area in microns from the values in floorplan def.
 3. Load generated floorplan def in magic tool and explore the floorplan.
@@ -65,7 +65,7 @@ Section 2 tasks:-
 Area\ of\ die\ in\ microns = Die\ width\ in\ microns * Die\ height\ in\ microns
 ```
 
-#### 2. Calculate the die area in microns from the values in floorplan def.
+####  Calculate the die area in microns from the values in floorplan def.
 
 Screenshot of contents of floorplan def
 
