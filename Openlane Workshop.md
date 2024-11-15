@@ -95,7 +95,6 @@ Area\ of\ die\ in\ microns = 660.685 * 671.405 = 443587.212425\ Square\ Microns
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/020b2149-b800-4aa8-9337-2b5f5f412106">
 
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/e011cd0f-695f-4908-9cbf-0287a9c5c697">
 
 <br>
 
@@ -110,13 +109,13 @@ cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03
 # Command to load the floorplan def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 ```
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/e011cd0f-695f-4908-9cbf-0287a9c5c697">
 
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/bf2b4e36-a86c-4f0f-98d4-34178d74bab2">
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/a9620b3d-19db-4ac0-8126-f250b35c658e">
 
-<img width="479" alt="image" src="https://github.com/user-attachments/assets/c6e698c3-1e69-407c-a3f5-5227b9c16356">
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/9dbe0a2d-0c08-46db-94f9-a3b211e2acde">
 
@@ -125,6 +124,18 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/1c21cd5e-41a6-4be3-9d49-3e5cbd183e69">
 
+#### 4. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+
+Command to run placement
+
+```tcl
+# Congestion aware placement by default
+run_placement
+```
+
+Screenshots of placement run
+
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/c6e698c3-1e69-407c-a3f5-5227b9c16356">
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/ff851ebb-e756-4f6a-9c2e-3591d2a98a15">
 
