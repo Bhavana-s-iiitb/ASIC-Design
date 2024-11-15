@@ -715,4 +715,17 @@ OR gate of drive strength 2 is driving 4 fanouts
 ![image](https://github.com/user-attachments/assets/904d5825-765f-4445-bc95-b7cc78edebcc)
 
 
+Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
 
+```tcl
+# Reports all the connections to a net
+report_net -connections _11675_
+
+# Replacing cell
+replace_cell _14514_ sky130_fd_sc_hd__or3_4
+
+# Generating custom timing report
+report_checks -fields {net cap slew input_pins} -digits 4
+```
+
+Result - slack reduced
