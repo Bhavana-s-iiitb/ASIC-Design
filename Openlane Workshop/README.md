@@ -503,14 +503,6 @@ Timing analysis using Open STA:
 <br>
 
 
-Newly created sta.conf:
-
-<br>
-
-
-
-![image](https://github.com/user-attachments/assets/e8543877-127c-438c-aa7a-b0dd00e9850b)
-
 
 
 ![image](https://github.com/user-attachments/assets/f1e8fc93-84af-42ba-9d05-e6b23445abfc)
