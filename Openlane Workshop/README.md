@@ -474,7 +474,7 @@ Screenshot of merged.lef in tmp:
 
 
 
-Facing unexpected unexplainable error while running floorplan
+### Facing unexpected unexplainable error while running floorplan
 
 <br>
 
@@ -485,7 +485,7 @@ Facing unexpected unexplainable error while running floorplan
 
 
 
-Running new set of commands:
+### Running new set of commands:
 ![image](https://github.com/user-attachments/assets/ad66d05d-97e7-4555-819d-224a13c18eb3)
 
 ![image](https://github.com/user-attachments/assets/2b828493-7eba-40c7-8133-769e24943a9c)
@@ -503,7 +503,7 @@ Screenshot of placement.def in magic
 <br>
 
 
-Finding the custom inverter
+### Finding the custom inverter
 
 <br>
 
@@ -516,7 +516,7 @@ Finding the custom inverter
 
 
 
-Timing analysis using Open STA:
+## Timing analysis using Open STA:
 
 <br>
 
