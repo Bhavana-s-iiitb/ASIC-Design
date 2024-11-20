@@ -297,6 +297,13 @@ plot y vs time a
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/512ad54d-95a7-4e59-b69d-2a255178cece">
 
+#### 5. Rise Time and fall time calculations:
+20% of output = 660mv
+80% of output = 2.64V
+![image](https://github.com/user-attachments/assets/98eed7c8-63bd-4403-97c5-3d950c277fac)
+
+![image](https://github.com/user-attachments/assets/0cc7bee7-e27c-4a0f-a113-636682527d49)
+
 #### 6. Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
 
 Link to Sky130 Periphery rules: [https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html)
