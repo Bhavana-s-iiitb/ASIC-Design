@@ -300,9 +300,39 @@ plot y vs time a
 #### 5. Rise Time and fall time calculations:
 20% of output = 660mv
 80% of output = 2.64V
-![image](https://github.com/user-attachments/assets/98eed7c8-63bd-4403-97c5-3d950c277fac)
 
+20% screenshot:
 ![image](https://github.com/user-attachments/assets/0cc7bee7-e27c-4a0f-a113-636682527d49)
+
+80% screenshot:
+![image](https://github.com/user-attachments/assets/5eddd8fe-a743-4d45-9d88-560778405688)
+
+![image](https://github.com/user-attachments/assets/c82cd952-081b-46a1-8270-fd83bcff0d29)
+
+
+##### Fall time calculation
+80% screenshot
+![image](https://github.com/user-attachments/assets/8afab0e4-0307-4b8f-9878-39b5df3aac00)
+
+20% screenshot
+![image](https://github.com/user-attachments/assets/f53891e7-e3ab-46e2-b2bd-5809f6557761)
+
+![image](https://github.com/user-attachments/assets/e28f4cbf-88f9-4a41-b2c2-027b6d0802c5)
+
+##### 50% transition time
+50% of 3.3V is 1.65V.
+
+Rise cell delay:
+![image](https://github.com/user-attachments/assets/14974232-2531-4a8a-9767-9abcebe9bd9f)
+![image](https://github.com/user-attachments/assets/75e8932f-0223-42d9-ad7f-ea5889ed76b4)
+
+
+fall cell delay:
+
+![image](https://github.com/user-attachments/assets/d45210d9-c7d8-4f2b-a0d6-dd76c87ec538)
+![image](https://github.com/user-attachments/assets/7fc0ff4f-6762-40aa-a465-7a35fa022ee0)
+
+
 
 #### 6. Find problem in the DRC section of the old magic tech file for the skywater process and fix them.
 
