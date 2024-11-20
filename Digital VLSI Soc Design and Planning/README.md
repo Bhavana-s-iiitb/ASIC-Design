@@ -581,9 +581,10 @@ Screenshot of merged.lef in tmp:
 
 <br>
 
+#### 8. Once synthesis has accepted our custom inverter we can now run floorplan and placement and verify the cell is accepted in PnR flow.
+Now that our custom inverter is properly accepted in synthesis we can now run floorplan using following command
 
-
-### Facing unexpected unexplainable error while running floorplan
+##### Facing unexpected unexplainable error while running floorplan
 
 <br>
 
@@ -594,7 +595,7 @@ Screenshot of merged.lef in tmp:
 
 
 
-### Running new set of commands:
+##### Running new set of commands:
 ![image](https://github.com/user-attachments/assets/ad66d05d-97e7-4555-819d-224a13c18eb3)
 
 ![image](https://github.com/user-attachments/assets/2b828493-7eba-40c7-8133-769e24943a9c)
@@ -625,7 +626,7 @@ Screenshot of placement.def in magic
 
 
 
-## Timing analysis using Open STA:
+#### 9 Timing analysis using Open STA:
 
 <br>
 
@@ -766,7 +767,8 @@ Running sta in new window:
 ![image](https://github.com/user-attachments/assets/647ea7f0-3fb9-4150-a67d-5a993f4a23a2)
 
 <br>
-10. Make timing ECO fixes to remove all violations.
+
+#### 10. Make timing ECO fixes to remove all violations.
 <br>
 
 Reduced Slack:
