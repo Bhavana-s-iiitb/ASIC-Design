@@ -375,7 +375,7 @@ Correction of DRC
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/fd29dd6e-9de5-4c84-9874-4cceab4404bf">
 
-
+## Day 4- Pre-layout timing analysis and importance of good clock tree
 ### Commands to open the custom inverter layout
 
 ```bash
