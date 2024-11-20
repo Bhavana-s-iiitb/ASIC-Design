@@ -389,7 +389,7 @@ magic -T sky130A.tech sky130_bhavana_inv.mag &
 
 ![image](https://github.com/user-attachments/assets/546092b8-6236-4dcd-ba7a-d10a059d733e)
 
-### Commands for tkcon window to set grid as tracks of locali layer
+#### 1 Commands for tkcon window to set grid as tracks of locali layer
 
 ```tcl
 # Get syntax for grid command
