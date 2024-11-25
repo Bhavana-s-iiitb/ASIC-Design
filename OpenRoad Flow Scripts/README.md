@@ -126,13 +126,15 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk cts
 
 ```
 <img width="700" alt="image" src=https://github.com/user-attachments/assets/f8cb76f7-cb04-4243-990e-63ff7160a394>
+
 ### gui_cts
-<img width="700" alt="image" srchttps://github.com/user-attachments/assets/f4651c51-7f72-4218-b57c-b528a2659239>
+
+<img width="700" alt="image" src=https://github.com/user-attachments/assets/f4651c51-7f72-4218-b57c-b528a2659239>
 
 ### cts_sdc
-<img width="700" alt="image" srchttps://github.com/user-attachments/assets/40b28ef3-492d-478d-82c5-58e57ddff834>
+<img width="700" alt="image" src=https://github.com/user-attachments/assets/40b28ef3-492d-478d-82c5-58e57ddff834>
 ### cts final report
-<img width="700" alt="image" srchttps://github.com/user-attachments/assets/b4569206-23a1-46f9-ac34-7ff02864ff48>
+<img width="700" alt="image" src=https://github.com/user-attachments/assets/b4569206-23a1-46f9-ac34-7ff02864ff48>
 
 
 ## 5. Routing
