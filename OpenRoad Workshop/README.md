@@ -45,10 +45,8 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 ```
 make gui_floorplan
 ```
+![image](https://github.com/user-attachments/assets/7ee5ff76-576a-4287-97d6-d54e12a3a2c0)
 
-![image](https://github.com/user-attachments/assets/a2a4780f-5597-4870-b491-dea676d0e91c)
-
-![image](https://github.com/user-attachments/assets/91906dc9-ea31-4fee-99cf-47601110769e)
 
 ```
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
@@ -57,5 +55,12 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 ![image](https://github.com/user-attachments/assets/5d6d0555-d27f-493c-b34b-28b1d720312f)
 
 ![image](https://github.com/user-attachments/assets/f7fb39a4-b7f3-47ed-a2f4-8b76afba8a1f)
+
+# Placement
+
+![image](https://github.com/user-attachments/assets/a894733b-d3ed-4aa6-b3af-1583a55e54ed)
+
+![image](https://github.com/user-attachments/assets/989d040c-2f1e-4733-bd6a-013129720d97)
+
 
 
