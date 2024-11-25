@@ -48,9 +48,13 @@ make gui_floorplan
 
 ![image](https://github.com/user-attachments/assets/a2a4780f-5597-4870-b491-dea676d0e91c)
 
+![image](https://github.com/user-attachments/assets/91906dc9-ea31-4fee-99cf-47601110769e)
+
 ```
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 ```
+
+![image](https://github.com/user-attachments/assets/5d6d0555-d27f-493c-b34b-28b1d720312f)
 
 ![image](https://github.com/user-attachments/assets/f7fb39a4-b7f3-47ed-a2f4-8b76afba8a1f)
 
