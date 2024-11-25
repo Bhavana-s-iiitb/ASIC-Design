@@ -1,4 +1,21 @@
-# Tool Installations
+# OpenRoad Flow Scripts
+
+OpenROAD Flow is a full RTL-to-GDS flow built entirely on open-source tools. 
+OpenROAD Flow Scripts we have the following public platforms:
+
+- sky130hd
+- sky130hs
+- nangate45
+- asap7
+### RTL to GDS Flow:
+
+ RTL to GDS flow is a methodology for designing an integrated circuit (IC) in the semiconductor industry. 
+
+![image](https://github.com/user-attachments/assets/f2715266-6607-44ac-9fc7-8d8ba0c4b7f6)
+1. Logic Synthesis:  In logic synthesis, a high-level description of the design (RTL Code) is converted into an optimized gate-level representation of a given standard cell library and certain design constraints.<br>
+2. Place and Route (PnR): Gate level netlist after DFT Insertion and SDC file is taken as input for the PnR and based on standard cells library, PnR starts. The goal of PnR stage is to place all the standard cells, Macros and I/O pads with minimal area, with minimal delay and Route them together in such a way that there is no DRC (Design Rule Check) error. The final output of this stage is the layout of design in the form of GDSII file which is defacto standard of layout file in the industry. <br>
+3. 
+# OpenRoad Tool Installations
 ```
 git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
 cd OpenROAD-flow-scripts
@@ -9,7 +26,7 @@ sudo ./setup.sh
 To build
 ` ./build_openroad.sh --local `
 
-## Verification of Installation
+### Verification of Installation
 
 ```
 source ./env.sh
@@ -23,8 +40,8 @@ make
 
 ![image](https://github.com/user-attachments/assets/08776748-eacb-4a09-8a54-7bcf7f56cec7)
 
-
-# Synthesis of vsdbabysoc
+# OpenRoad Flow  with vsdbabysoc file
+## 1. Synthesis of vsdbabysoc
 ```
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 
@@ -39,7 +56,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 ![image](https://github.com/user-attachments/assets/4783a64d-d04d-489b-9a8e-cfe0d381bd02)
 
 
-# Floorplan
+## 2. Floorplan
 
 ```
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
@@ -77,7 +94,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 ![image](https://github.com/user-attachments/assets/6ff40c10-7b1c-4c66-a556-ebacb5fa6744)
 
 
-# Placement
+## 3. Placement
 ```
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk place
 
@@ -91,6 +108,10 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk place
 
 
 ### gui_place:
+```
+make gui_place
+```
+
 ![image](https://github.com/user-attachments/assets/6e67529b-ae30-4ccf-9851-9fd6aa9368cd)
 ![image](https://github.com/user-attachments/assets/21aaaacc-c49f-4e5c-bd1a-466f09789d91)
 
@@ -100,7 +121,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk place
 ### Placement Report
 ![image](https://github.com/user-attachments/assets/9c2702cb-c0e1-47b5-987d-4249579a88b6)
 
-# CTS
+## 4. CTS
 ```
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk cts
 
@@ -115,7 +136,7 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk cts
 ![image](https://github.com/user-attachments/assets/b4569206-23a1-46f9-ac34-7ff02864ff48)
 
 
-# Routing
+## 5. Routing
 ![image](https://github.com/user-attachments/assets/5c528a9f-3ed8-47b3-9fd8-696ba5c0d27d)
 ![image](https://github.com/user-attachments/assets/e7528008-ebb7-426f-bae1-91d60190aab3)
 
