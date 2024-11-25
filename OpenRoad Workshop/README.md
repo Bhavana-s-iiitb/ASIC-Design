@@ -30,6 +30,13 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 
 ```
 ![image](https://github.com/user-attachments/assets/f702ee9f-fb34-4c62-9e14-4e514e43e373)
+## Log Files
+
+![image](https://github.com/user-attachments/assets/3ac0dee4-5c08-4bb5-a293-fb0d2535f2b5)
+
+![image](https://github.com/user-attachments/assets/64a953b5-3d1f-4305-90c5-80a5b9d41555)
+
+![image](https://github.com/user-attachments/assets/4783a64d-d04d-489b-9a8e-cfe0d381bd02)
 
 
 # Floorplan
@@ -38,15 +45,25 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 
 ```
-![image](https://github.com/user-attachments/assets/9a0314a2-9c3a-4dc5-af3c-e4669f2c8d6c)
 
-![image](https://github.com/user-attachments/assets/0d40d06f-b058-43d2-b8ca-1cd5b4e0f3ef)
+![image](https://github.com/user-attachments/assets/8d15785f-76f0-4011-8aa0-25431c91eadc)
+
+![image](https://github.com/user-attachments/assets/e5fcfa1c-777d-4ea4-8de2-87a5347a54b2)
+
 
 ```
 make gui_floorplan
 ```
-![image](https://github.com/user-attachments/assets/7ee5ff76-576a-4287-97d6-d54e12a3a2c0)
+DAC
+<br>
 
+![image](https://github.com/user-attachments/assets/2409697a-e6f2-4ac1-b5e9-3a0c929ad205)
+
+PLL
+<br>
+
+
+![image](https://github.com/user-attachments/assets/a1e798d5-a2c3-4e73-86a1-2318ad9effbd)
 
 ```
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
@@ -56,11 +73,50 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 
 ![image](https://github.com/user-attachments/assets/f7fb39a4-b7f3-47ed-a2f4-8b76afba8a1f)
 
+### floorplan Final report
+![image](https://github.com/user-attachments/assets/6ff40c10-7b1c-4c66-a556-ebacb5fa6744)
+
+
 # Placement
+```
+make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk place
 
-![image](https://github.com/user-attachments/assets/a894733b-d3ed-4aa6-b3af-1583a55e54ed)
+```
 
-![image](https://github.com/user-attachments/assets/989d040c-2f1e-4733-bd6a-013129720d97)
+![image](https://github.com/user-attachments/assets/01d6719e-2294-4efe-b5db-f809879613ec)
 
+
+![image](https://github.com/user-attachments/assets/eb729b62-a8a7-4adf-acd3-71da7493ab88)
+![image](https://github.com/user-attachments/assets/8043c9a8-a0db-4ebd-b4dd-c67d44ce5104)
+
+
+### gui_place:
+![image](https://github.com/user-attachments/assets/6e67529b-ae30-4ccf-9851-9fd6aa9368cd)
+![image](https://github.com/user-attachments/assets/21aaaacc-c49f-4e5c-bd1a-466f09789d91)
+
+### Log Files
+
+![image](https://github.com/user-attachments/assets/ecfc6f50-9604-4c6e-ad48-c64b0c771718)
+### Placement Report
+![image](https://github.com/user-attachments/assets/9c2702cb-c0e1-47b5-987d-4249579a88b6)
+
+# CTS
+```
+make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk cts
+
+```
+![image](https://github.com/user-attachments/assets/f8cb76f7-cb04-4243-990e-63ff7160a394)
+### gui_cts
+![image](https://github.com/user-attachments/assets/f4651c51-7f72-4218-b57c-b528a2659239)
+
+### cts_sdc
+![image](https://github.com/user-attachments/assets/40b28ef3-492d-478d-82c5-58e57ddff834)
+### cts final report
+![image](https://github.com/user-attachments/assets/b4569206-23a1-46f9-ac34-7ff02864ff48)
+
+
+# Routing
+![image](https://github.com/user-attachments/assets/5c528a9f-3ed8-47b3-9fd8-696ba5c0d27d)
+![image](https://github.com/user-attachments/assets/e7528008-ebb7-426f-bae1-91d60190aab3)
 
 
