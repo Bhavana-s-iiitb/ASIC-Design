@@ -14,7 +14,7 @@ OpenROAD Flow Scripts we have the following public platforms:
 ![image](https://github.com/user-attachments/assets/f2715266-6607-44ac-9fc7-8d8ba0c4b7f6)
 1. Logic Synthesis:  In logic synthesis, a high-level description of the design (RTL Code) is converted into an optimized gate-level representation of a given standard cell library and certain design constraints.<br>
 2. Place and Route (PnR): Gate level netlist after DFT Insertion and SDC file is taken as input for the PnR and based on standard cells library, PnR starts. The goal of PnR stage is to place all the standard cells, Macros and I/O pads with minimal area, with minimal delay and Route them together in such a way that there is no DRC (Design Rule Check) error. The final output of this stage is the layout of design in the form of GDSII file which is defacto standard of layout file in the industry. <br>
-3. 
+
 # OpenRoad Tool Installations
 ```
 git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
