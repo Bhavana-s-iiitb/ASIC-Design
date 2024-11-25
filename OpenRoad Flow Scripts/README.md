@@ -84,13 +84,6 @@ PLL
 
 <img width="600" alt="image" src=https://github.com/user-attachments/assets/a1e798d5-a2c3-4e73-86a1-2318ad9effbd>
 
-```
-make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
-```
-
-<img width="600" alt="image" src=https://github.com/user-attachments/assets/5d6d0555-d27f-493c-b34b-28b1d720312f>
-
-<img width="600" alt="image" src=https://github.com/user-attachments/assets/f7fb39a4-b7f3-47ed-a2f4-8b76afba8a1f>
 
 ### floorplan Final report
 <img width="600" alt="image" src=https://github.com/user-attachments/assets/6ff40c10-7b1c-4c66-a556-ebacb5fa6744>
