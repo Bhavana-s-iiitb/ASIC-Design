@@ -29,5 +29,5 @@ make
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 
 ```
-
 ![image](https://github.com/user-attachments/assets/f702ee9f-fb34-4c62-9e14-4e514e43e373)
+
