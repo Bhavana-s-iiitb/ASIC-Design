@@ -48,14 +48,14 @@ make
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 
 ```
-<img width="479" alt="image" src=https://github.com/user-attachments/assets/f702ee9f-fb34-4c62-9e14-4e514e43e373>
+<img width="700" alt="image" src=https://github.com/user-attachments/assets/f702ee9f-fb34-4c62-9e14-4e514e43e373>
 ## Log Files
 
-<img width="479" alt="image" src=https://github.com/user-attachments/assets/3ac0dee4-5c08-4bb5-a293-fb0d2535f2b5>
+<img width="700" alt="image" src=https://github.com/user-attachments/assets/3ac0dee4-5c08-4bb5-a293-fb0d2535f2b5>
 
-<img width="479" alt="image" src=https://github.com/user-attachments/assets/64a953b5-3d1f-4305-90c5-80a5b9d41555>
+<img width="700" alt="image" src=https://github.com/user-attachments/assets/64a953b5-3d1f-4305-90c5-80a5b9d41555>
 
-<img width="479" alt="image" src=https://github.com/user-attachments/assets/4783a64d-d04d-489b-9a8e-cfe0d381bd02>
+<img width="700" alt="image" src=https://github.com/user-attachments/assets/4783a64d-d04d-489b-9a8e-cfe0d381bd02>
 
 
 ## 2. Floorplan
@@ -128,14 +128,14 @@ make gui_place
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk cts
 
 ```
-![image](https://github.com/user-attachments/assets/f8cb76f7-cb04-4243-990e-63ff7160a394)
+<img width="700" alt="image" src=https://github.com/user-attachments/assets/f8cb76f7-cb04-4243-990e-63ff7160a394>
 ### gui_cts
-![image](https://github.com/user-attachments/assets/f4651c51-7f72-4218-b57c-b528a2659239)
+<img width="700" alt="image" srchttps://github.com/user-attachments/assets/f4651c51-7f72-4218-b57c-b528a2659239>
 
 ### cts_sdc
-![image](https://github.com/user-attachments/assets/40b28ef3-492d-478d-82c5-58e57ddff834)
+<img width="700" alt="image" srchttps://github.com/user-attachments/assets/40b28ef3-492d-478d-82c5-58e57ddff834>
 ### cts final report
-![image](https://github.com/user-attachments/assets/b4569206-23a1-46f9-ac34-7ff02864ff48)
+<img width="700" alt="image" srchttps://github.com/user-attachments/assets/b4569206-23a1-46f9-ac34-7ff02864ff48>
 
 
 ## 5. Routing
