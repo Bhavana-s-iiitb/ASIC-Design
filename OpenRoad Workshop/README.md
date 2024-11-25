@@ -31,3 +31,27 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
 ```
 ![image](https://github.com/user-attachments/assets/f702ee9f-fb34-4c62-9e14-4e514e43e373)
 
+
+# Floorplan
+
+```
+make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
+
+```
+![image](https://github.com/user-attachments/assets/9a0314a2-9c3a-4dc5-af3c-e4669f2c8d6c)
+
+![image](https://github.com/user-attachments/assets/0d40d06f-b058-43d2-b8ca-1cd5b4e0f3ef)
+
+```
+make gui_floorplan
+```
+
+![image](https://github.com/user-attachments/assets/a2a4780f-5597-4870-b491-dea676d0e91c)
+
+```
+make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
+```
+
+![image](https://github.com/user-attachments/assets/f7fb39a4-b7f3-47ed-a2f4-8b76afba8a1f)
+
+
