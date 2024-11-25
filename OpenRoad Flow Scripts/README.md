@@ -43,6 +43,10 @@ make
 <img width="479" alt="image" src=https://github.com/user-attachments/assets/08776748-eacb-4a09-8a54-7bcf7f56cec7>
 
 # OpenRoad Flow  with vsdbabysoc file
+
+### Config.mk file:
+<img width="700" alt="image" srchttps://github.com/user-attachments/assets/88abad09-1961-46c0-a4c9-2d6703ff2975>
+
 ## 1. Synthesis of vsdbabysoc
 ```
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
