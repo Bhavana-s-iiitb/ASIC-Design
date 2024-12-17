@@ -1,12 +1,4 @@
-# ASIC Design Class
-## Table of Contents
-  - [ Executing a simple c program on virtual machine using gcc ](#1-executing-a-simple-c-program-on-virtual-machine-using-gcc)
-  - [ Executing the c program using riscv64 ](#2-executing-the-c-program-using-riscv64)
-  - [ Instruction types in RISC-V ](#3-instruction-types-in-risc-v)
-  - [ Functional Simulation ](#4-functional-simulation)
-  - [ Application program compilation](#5-compilation-of-an-application-program-with-gcc-and-risc-v-gcc)
-  - [ Converting TL-Verilog into Verilog and Simulation](#7-converting-tl-verilog-to-verilog-and-simulation)
-  - [ VSDBabySoC](#8-vsdbabysoc)
+# Physical Design Of ASICs
 
 <details>
   <summary> Executing a simple c program on virtual machine using gcc</summary>
