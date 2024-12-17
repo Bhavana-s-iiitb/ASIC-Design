@@ -197,8 +197,9 @@ It is used to view the VCD(Value Change Dump) waveform.<br>
 
 </details>
 
+<details>
+  <summary>Compilation of an application program with gcc and risc-v gcc</summary>
 
-# 5 Compilation of an application program with gcc and risc-v gcc
 ### Application: Currency Converter
 c program:
 
@@ -276,7 +277,11 @@ int main()
 ### Compilation using gcc and risc-v gcc:
 ![14 3](https://github.com/user-attachments/assets/e95150b2-8caf-4662-a088-885078c9b784)
 
-# 7 Converting TL-Verilog to verilog and simulation
+</details>
+
+<details>
+  <summary>Converting TL-Verilog to verilog and simulation</summary>
+
 ### Installation of packages
 ```
 sudo apt install make python python3 python3-pip git iverilog gtkwave
@@ -337,7 +342,11 @@ Comparision of waveforms with makerchip results:
 <img width="960" alt="Screenshot 2024-08-21 194140" src="https://github.com/user-attachments/assets/8f3dd11b-8ccd-4e2d-93bf-33255009ca92">
 <img width="877" alt="Screenshot 2024-08-21 192246" src="https://github.com/user-attachments/assets/19a67575-aa76-495c-871b-700bf32aac48">
 
-# 8 VSDBabySoC
+</details>
+
+<details>
+  <summary>VSDBabySoC</summary>
+
 VSDBabySoC is a small RISCV-based System on a Chip (SoC). It contains one RVMYTH microprocessor, a PLL generator and a DAC to communicate with analog devices.
 ### PLL
 Phase Locked Loop is an anolog circuit used for frequency synthesis. The function of the PLL is to compare the distributed clock to the incoming reference clock, and vary the phase and frequency of its output until the reference and feedback clocks are phase and frequency matched.
@@ -366,3 +375,4 @@ gtkwave pre_synth_sim.vcd
 
 ![VirtualBox_bhavana_03_09_2024_02_57_57_1](https://github.com/user-attachments/assets/45f71ade-24f6-4577-8098-1f6b430f2dd6)
 
+</details>
