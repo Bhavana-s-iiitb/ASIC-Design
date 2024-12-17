@@ -8,7 +8,9 @@
   - [ Converting TL-Verilog into Verilog and Simulation](#7-converting-tl-verilog-to-verilog-and-simulation)
   - [ VSDBabySoC](#8-vsdbabysoc)
 
-# 1 Executing a simple c program on virtual machine using gcc
+<details>
+  <summary> Executing a simple c program on virtual machine using gcc</summary>
+
 ### Step 1:Creating a .c file using leafpad editor 
 leafpad is the editor which can be installed using the command<br> 
 ``"sudo snap install leafpad"``<br>
@@ -26,7 +28,11 @@ A c program file named "sum1ton" is created<br>
 The sum of numbers from 1 to 20 is displayed as shown<br>
 ![A5](https://github.com/user-attachments/assets/b6c230f3-de57-4586-ad71-ec8df1f71fc7)
 
-# 2 Executing the c program using riscv64
+</details>
+
+<details>
+  <summary> Executing the c program using riscv64</summary>
+
 ### Command to run the program using RISCV compiler:<br>
 ``riscv64-unknown-elf-gcc -ofast -mabi-rv64i -o sum1ton.o sum1ton.c``<br>
 `spike pk sum1ton.o`<br>
@@ -71,7 +77,11 @@ Object dump command can be used to display the assembly instructions and corresp
 For example, the value of register a0 before the execution was 0x0000000000000001 and content in a0 after excetion of `lui a0,0x21` is 0x0000000000021000, which means "load upper immediate" instruction is completed.<br><br>
 <img src = "https://github.com/user-attachments/assets/04965af0-ac85-408e-b029-be3b47b32bd1" width = "700" height ="400">
 
-# 3 Instruction types in RISC-V
+</details>
+
+<details>
+  <summary>Instruction types in RISC-V</summary>
+
 
 <img width="772" alt="Instruction format" src="https://github.com/user-attachments/assets/9d973526-ae08-4854-bee5-1c001c16389a">
 
@@ -144,7 +154,12 @@ Example: BEQ r1,r2,25 --> if r1=r2 is true then, control jumps to the instructio
 | LW r13, r11, 2 | 0x0025A683 | 0x46B60002 |
 | SLL r15, r11, r2 | 0x002597B3 | 0x1627804 |
 
-# 4 Functional Simulation
+</details>
+
+
+<details>
+  <summary>Functional Simulation</summary>
+
 ### Icarus Verilog:
 It is an implementation of the Verilog hardware description language. The Icarus Verilog compiles the verilog program that can be run to perform the simulation.<br>
 
@@ -179,6 +194,9 @@ It is used to view the VCD(Value Change Dump) waveform.<br>
 
 11. add r14,r2,r2 --> MEM[25] <= 32'h00210700;
 ![A4 14](https://github.com/user-attachments/assets/ef1f9b06-2262-4009-9caa-816ddfefafd8)
+
+</details>
+
 
 # 5 Compilation of an application program with gcc and risc-v gcc
 ### Application: Currency Converter
